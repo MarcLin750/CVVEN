@@ -1,0 +1,162 @@
+CRITICAL - 2024-03-26 17:32:37 --> TypeError: App\Controllers\adminController::admin(): Return value must be of type string, none returned
+in APPPATH\Controllers\adminController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\adminController->admin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\htdocs\\CVVENM\\CVVEN\\public\\index.php')
+CRITICAL - 2024-03-26 17:33:05 --> TypeError: App\Controllers\adminController::admin(): Return value must be of type string, none returned
+in APPPATH\Controllers\adminController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\adminController->admin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\htdocs\\CVVENM\\CVVEN\\public\\index.php')
+ERROR - 2024-03-26 18:29:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'cvven', 3306, '', 0)
+#1 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2023\htdocs\CVVENM\CVVEN\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp2023\htdocs\CVVENM\CVVEN\app\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+#8 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2023\htdocs\CVVENM\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2023\htdocs\CVVENM\CVVEN\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp2023\htdocs\CVVENM\CVVEN\app\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+#6 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+#7 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2023\htdocs\CVVENM\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\ht...')
+#11 {main}
+CRITICAL - 2024-03-26 18:29:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `admin_name` = :admin_name:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\htdocs\\CVVENM\\CVVEN\\public\\index.php')
+ERROR - 2024-03-26 18:30:09 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'cvven', 3306, '', 0)
+#1 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2023\htdocs\CVVENM\CVVEN\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp2023\htdocs\CVVENM\CVVEN\app\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+#8 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2023\htdocs\CVVENM\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2023\htdocs\CVVENM\CVVEN\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp2023\htdocs\CVVENM\CVVEN\app\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+#6 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+#7 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2023\htdocs\CVVENM\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\ht...')
+#11 {main}
+CRITICAL - 2024-03-26 18:30:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `admin_name` = :admin_name:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\htdocs\\CVVENM\\CVVEN\\public\\index.php')
+ERROR - 2024-03-26 18:30:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'cvven', 3306, '', 0)
+#1 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2023\htdocs\CVVENM\CVVEN\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp2023\htdocs\CVVENM\CVVEN\app\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+#8 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2023\htdocs\CVVENM\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2023\htdocs\CVVENM\CVVEN\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp2023\htdocs\CVVENM\CVVEN\app\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+#6 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+#7 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\xampp2023\htdocs\CVVENM\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2023\htdocs\CVVENM\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2023\htdocs\CVVENM\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\ht...')
+#11 {main}
+CRITICAL - 2024-03-26 18:30:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `admin_name` = :admin_name:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\adminController.php(19): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\htdocs\\CVVENM\\CVVEN\\public\\index.php')
+CRITICAL - 2024-03-26 19:34:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/login.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/login', [], true)
+ 3 APPPATH\Controllers\adminController.php(28): view('admin/login')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2023\\htdocs\\CVVENM\\CVVEN\\public\\index.php')
