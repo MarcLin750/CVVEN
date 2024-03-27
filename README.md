@@ -2,7 +2,7 @@
 
 ## Projet BTS 2024
 
-### Collaborateurs
+### Collaborateurs:
 
 - Kevin Giang
 
