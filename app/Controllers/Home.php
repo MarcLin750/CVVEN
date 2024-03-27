@@ -11,6 +11,9 @@ class Home extends BaseController
 
         // Charger la vue de la page d'accueil
         $content = view('index');
+        
+        // add other content
+        // $# = view('#');
 
         // Charger la vue du footer
         $footer = view('template/footer');

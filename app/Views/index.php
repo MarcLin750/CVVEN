@@ -1,26 +1,126 @@
 
 
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h5 class="modal-title d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-circle fs-3 me-2" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        User Login
+                    </h5>
+                    <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control shadow-none">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control shadow-none">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <button type="submit" class="btn btn-dark shadow-none">Login</button>
+                        <a href="javascript:void(0)" class="text-secondary text-decoration-none">Forgot Password</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h5 class="modal-title d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-lines-fill fs-3 me-2" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                        </svg>
+                        User Registration
+                    </h5>
+                    <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
+                        Note: Your details must match with you ID (Identity card, Passport, Driving license, etc.)
+                        that will be required during check-in.
+                    </span>
+                    <div class="container-fluid">
+                        <div class= "row">
+                            <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control shadow-none"> 
+                            </div>
+                            <div class="col-md-6 p-0 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control shadow-none"> 
+                            </div>
+                            <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Phone number</label>
+                                <input type="number" class="form-control shadow-none"> 
+                            </div>
+                            <div class="col-md-6 p-0  mb-3">
+                                <label class="form-label">Picture</label>
+                                <input type="file" class="form-control shadow-none"> 
+                            </div>
+                            <div class="col-md-12 p-0  mb-3">
+                                <label class="form-label">Address</label>
+                                <textarea class="form-control shadow-none"  rows="1"></textarea>
+                            </div>
+                            <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Postal Code</label>
+                                <input type="number" class="form-control shadow-none"> 
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control shadow-none"> 
+                            </div>
+                            <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control shadow-none"> 
+                            </div>
+                            <div class="col-md-6 p-0  mb-3">
+                                <label class="form-label">Confirm password</label>
+                                <input type="password" class="form-control shadow-none"> 
+                            </div>
+                        </div>
+                        <div class="text-center my-1">
+                        <button type="submit" class="btn btn-dark shadow-none">REGISTER</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
     <div class="container-fluid px-lg-4 mt-4">
         <div class="swiper swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="<?= base_url('carousel/room1.png') ?>" class="w-100 d-block" />
+                    <img src="<?= base_url('./carousel/room1.png') ?>" class="w-100 d-block" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo base_url('carousel/room1.png'); ?>" class="w-100 d-block" />
+                    <img src="<?php echo base_url('./carousel/room2.png'); ?>" class="w-100 d-block" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo base_url('carousel/room3.png'); ?>" class="w-100 d-block" />
+                    <img src="<?php echo base_url('./carousel/room3.png'); ?>" class="w-100 d-block" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo base_url('carousel/room4.png'); ?>" class="w-100 d-block" />
+                    <img src="<?php echo base_url('./carousel/room4.png'); ?>" class="w-100 d-block" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo base_url('carousel/room5.png'); ?>" class="w-100 d-block" />
+                    <img src="<?php echo base_url('./carousel/room5.png'); ?>" class="w-100 d-block" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo base_url('carousel/room6.png'); ?>" class="w-100 d-block" />
+                    <img src="<?php echo base_url('./carousel/room6.png'); ?>" class="w-100 d-block" />
                 </div>
                 
             </div>
@@ -75,7 +175,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card border-0 shadow" style="max-width: 350px; margin:auto ;">
-                    <img src="<?php echo base_url('rooms/1.jpg'); ?>" class="card-img-top" >
+                    <img src="<?php echo base_url('./rooms/1.jpg'); ?>" class="card-img-top" >
                     <div class="card-body">
                         <h5>Simple Room</h5>
                         <h6 class="mb-4">150€ per night</h6>
@@ -136,7 +236,7 @@
             </div>
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card border-0 shadow" style="max-width: 350px; margin:auto ;">
-                    <img src="<?php echo base_url('rooms/IMG_11892.png'); ?>" class="card-img-top" >
+                    <img src="<?php echo base_url('./rooms/IMG_11892.png'); ?>" class="card-img-top" >
                     <div class="card-body">
                         <h5>Simple Room</h5>
                         <h6 class="mb-4">190€ per night</h6>
@@ -197,7 +297,7 @@
             </div>
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card border-0 shadow" style="max-width: 350px; margin:auto ;">
-                    <img src="<?php echo base_url('rooms/IMG_39782.png'); ?>" class="card-img-top" >
+                    <img src="<?php echo base_url('./rooms/IMG_39782.png'); ?>" class="card-img-top" >
                     <div class="card-body">
                         <h5>Luxury Room</h5>
                         <h6 class="mb-4">990€ per night</h6>
@@ -271,23 +371,23 @@
     <div class="container">
         <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
             <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-                <img src="facilities\wifi.svg" width="80px">
+                <img src=".\facilities\wifi.svg" width="80px">
                 <h5 class="mt-3">WIFI</h5>
             </div>
             <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-                <img src="facilities\tv.svg" width="80px">
+                <img src=".\facilities\tv.svg" width="80px">
                 <h5 class="mt-3">TELEVISION</h5>
             </div>
             <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-                <img src="facilities\piano.svg" width="80px">
+                <img src=".\facilities\piano.svg" width="80px">
                 <h5 class="mt-3">PIANO</h5>
             </div>
             <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-                <img src="facilities\book-fill.svg" width="80px">
+                <img src=".\facilities\book-fill.svg" width="80px">
                 <h5 class="mt-3">LIBRARY</h5>
             </div>
             <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-                <img src="facilities\massage.svg" width="80px">
+                <img src=".\facilities\massage.svg" width="80px">
                 <h5 class="mt-3">massage</h5>
             </div>
             <div class="col-lg-12 text-center mt-5">
@@ -302,7 +402,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide bg-white p-4">
                    <div class="profile d-flex align-items-center mb-3">
-                    <img src="facilities\person.svg " alt="">
+                    <img src=".\facilities\person.svg " alt="">
                     <h6 class="m-0 ms-2">Verified Random User </h6>
                    </div>
                    <p>
@@ -331,7 +431,7 @@
                 </div>
                 <div class="swiper-slide bg-white p-4">
                    <div class="profile d-flex align-items-center p-4">
-                    <img src="facilities\person.svg " alt="">
+                    <img src=".\facilities\person.svg " alt="">
                     <h6 class="m-0 ms-2">Verified Random User </h6>
                    </div>
                    <p>
@@ -360,7 +460,7 @@
                 </div>
                 <div class="swiper-slide bg-white p-4">
                    <div class="profile d-flex align-items-center p-4">
-                    <img src="facilities\person.svg " alt="">
+                    <img src="./facilities/person.svg " alt="">
                     <h6 class="m-0 ms-2">Verified Random User</h6>
                    </div>
                    <p>
@@ -432,38 +532,3 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-        spaceBetween: 30,
-        effect: "fade",
-        loop:true,
-        autoplay:{
-            delay:3500,
-            disableOnInteraction:false,
-        }
-        });
-
-        
-        var swiper = new Swiper(".swipper-testimonials", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        });
-  
-  </script>
-</body>
-</html>
-
