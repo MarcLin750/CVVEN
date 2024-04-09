@@ -1,394 +1,43 @@
 
-<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form>
-                <div class="modal-header">
-                    <h5 class="modal-title d-flex align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-circle fs-3 me-2" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                        </svg>
-                        User Login
-                    </h5>
-                    <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label class="form-label">Email address</label>
-                        <input type="email" class="form-control shadow-none">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" class="form-control shadow-none">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <button type="submit" class="btn btn-dark shadow-none">Login</button>
-                        <a href="javascript:void(0)" class="text-secondary text-decoration-none">Forgot Password</a>
-                    </div>
-                </div>
-            </form>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+            <img src="<?php echo base_url('./carousel/room1.png'); ?>" class="d-block w-100" alt="room1">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+            <img src="<?php echo base_url('./carousel/room2.png'); ?>" class="d-block w-100" alt="room2">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+            <img src="<?php echo base_url('./carousel/room3.png'); ?>" class="d-block w-100" alt="room3">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+            <img src="<?php echo base_url('./carousel/room4.png'); ?>" class="d-block w-100" alt="room4">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+            <img src="<?php echo base_url('./carousel/room5.png'); ?>" class="d-block w-100" alt="room5">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+            <img src="<?php echo base_url('./carousel/room6.png'); ?>" class="d-block w-100" alt="room6">
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
 
-<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <form>
-                <div class="modal-header">
-                    <h5 class="modal-title d-flex align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-lines-fill fs-3 me-2" viewBox="0 0 16 16">
-                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
-                        </svg>
-                        User Registration
-                    </h5>
-                    <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
-                        Note: Your details must match with you ID (Identity card, Passport, Driving license, etc.)
-                        that will be required during check-in.
-                    </span>
-                    <div class="container-fluid">
-                        <div class= "row">
-                            <div class="col-md-6 ps-0 mb-3">
-                                <label class="form-label">Name</label>
-                                <input type="text" class="form-control shadow-none"> 
-                            </div>
-                            <div class="col-md-6 p-0 mb-3">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control shadow-none"> 
-                            </div>
-                            <div class="col-md-6 ps-0 mb-3">
-                                <label class="form-label">Phone number</label>
-                                <input type="number" class="form-control shadow-none"> 
-                            </div>
-                            <div class="col-md-6 p-0  mb-3">
-                                <label class="form-label">Picture</label>
-                                <input type="file" class="form-control shadow-none"> 
-                            </div>
-                            <div class="col-md-12 p-0  mb-3">
-                                <label class="form-label">Address</label>
-                                <textarea class="form-control shadow-none"  rows="1"></textarea>
-                            </div>
-                            <div class="col-md-6 ps-0 mb-3">
-                                <label class="form-label">Postal Code</label>
-                                <input type="number" class="form-control shadow-none"> 
-                            </div>
-                            <div class="col-md-6 p-0">
-                                <label class="form-label">Date of Birth</label>
-                                <input type="date" class="form-control shadow-none"> 
-                            </div>
-                            <div class="col-md-6 ps-0 mb-3">
-                                <label class="form-label">Password</label>
-                                <input type="password" class="form-control shadow-none"> 
-                            </div>
-                            <div class="col-md-6 p-0  mb-3">
-                                <label class="form-label">Confirm password</label>
-                                <input type="password" class="form-control shadow-none"> 
-                            </div>
-                        </div>
-                        <div class="text-center my-1">
-                        <button type="submit" class="btn btn-dark shadow-none">REGISTER</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-
-<div class="container-fluid px-lg-4 mt-4">
-    <div class="swiper swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="<?= base_url('./carousel/room1.png') ?>" class="w-100 d-block" />
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo base_url('./carousel/room2.png'); ?>" class="w-100 d-block" />
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo base_url('./carousel/room3.png'); ?>" class="w-100 d-block" />
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo base_url('./carousel/room4.png'); ?>" class="w-100 d-block" />
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo base_url('./carousel/room5.png'); ?>" class="w-100 d-block" />
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo base_url('./carousel/room6.png'); ?>" class="w-100 d-block" />
-            </div>
-            
-        </div>
-    </div>
-</div>
-<div class="containe availability-form">
-    <div class="row">
-        <div class="col-lg-12 bg-white shadow p-4 rounded">
-            <h5 class="mb-4">Check Booking Availability</h5>
-            <form >
-                <div class="row align-items-end">
-                    <div class="col-lg-3 mb-3"> 
-                        <label class="form-label" style="font-weight:500;">Check-in</label>
-                        <input type="date" class="form-control shadow-none"> 
-                    </div>
-                    <div class="col-lg-3 mb-3"> 
-                        <label class="form-label" style="font-weight:500;">Check-out</label>
-                        <input type="date" class="form-control shadow-none"> 
-                    </div>
-                    <div class="col-lg-3 mb-3">
-                        <label class="form-label" style="font-weight:500;">Adult</label>
-                        <select class="form-select shadow-none">
-                           
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-2 mb-3">
-                        <label class="form-label" style="font-weight:500;">Children</label>
-                        <select class="form-select shadow-none">
-                            
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-1 mb-lg-3 mt-2">
-                        <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<!--Chambres -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR ROOMS</h2>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card border-0 shadow" style="max-width: 350px; margin:auto ;">
-                <img src="<?php echo base_url('./rooms/1.jpg'); ?>" class="card-img-top" >
-                <div class="card-body">
-                    <h5>Simple Room</h5>
-                    <h6 class="mb-4">150€ per night</h6>
-                    <div class="features mb-4">
-                        <h6 class="mb-1">Features</h6>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           2 Rooms
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           1 Bathroom
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           1 Balcony
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           3 sofa
-                        </span>
-                    </div>
-                    <div class="facilities mb-4">
-                        <h6 class="mb-1">Facilities</h6>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                            Wifi
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           Television
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           Climatisation
-                        </span>
-                        
-                    </div>
-                    <div class="rating mb-4">
-                        <h6 class="mb-1">Rating</h6>
-                        <span class="badge rounded-pill bg-light"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="d-flex justify-content-evenly mb-2">
-                    <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-                    <a href="#" class="btn btn-sm  btn-outline-dark shadow-none">More Details</a>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card border-0 shadow" style="max-width: 350px; margin:auto ;">
-                <img src="<?php echo base_url('./rooms/IMG_11892.png'); ?>" class="card-img-top" >
-                <div class="card-body">
-                    <h5>Simple Room</h5>
-                    <h6 class="mb-4">190€ per night</h6>
-                    <div class="features mb-4">
-                        <h6 class="mb-1">Features</h6>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           2 Rooms
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           1 Bathroom
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           1 Balcony
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           3 sofa
-                        </span>
-                    </div>
-                    <div class="facilities mb-4">
-                        <h6 class="mb-1">Facilities</h6>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                            Wifi
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           Television
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           Climatisation
-                        </span>
-                        
-                    </div>
-                    <div class="rating mb-4">
-                        <h6 class="mb-1">Rating</h6>
-                        <span class="badge rounded-pill bg-light"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="d-flex justify-content-evenly mb-2">
-                    <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-                    <a href="#" class="btn btn-sm  btn-outline-dark shadow-none">More Details</a>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card border-0 shadow" style="max-width: 350px; margin:auto ;">
-                <img src="<?php echo base_url('./rooms/IMG_39782.png'); ?>" class="card-img-top" >
-                <div class="card-body">
-                    <h5>Luxury Room</h5>
-                    <h6 class="mb-4">990€ per night</h6>
-                    <div class="features mb-4">
-                        <h6 class="mb-1">Features</h6>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           4 Rooms
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           2 Bathroom
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           1 Balcony
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           8 sofa
-                        </span>
-                    </div>
-                    <div class="facilities mb-4">
-                        <h6 class="mb-1">Facilities</h6>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           High Speed Wifi
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                          OLED Television
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           PC
-                        </span>
-                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap">
-                           ...
-                        </span>
-                       
-                        
-                    </div>
-                    <div class="rating mb-4">
-                        <h6 class="mb-1">Rating</h6>
-                        <span class="badge rounded-pill bg-light"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="d-flex justify-content-evenly mb-2">
-                    <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-                    <a href="#" class="btn btn-sm  btn-outline-dark shadow-none">More Details</a>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <div class="col-lg-12 text-center mt-5">
-            <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Rooms >>></a>
-        </div>
-    </div>
-</div>
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR FACILITIES</h2>
-<div class="container">
-    <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
-        <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-            <img src=".\facilities\wifi.svg" width="80px">
-            <h5 class="mt-3">WIFI</h5>
-        </div>
-        <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-            <img src=".\facilities\tv.svg" width="80px">
-            <h5 class="mt-3">TELEVISION</h5>
-        </div>
-        <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-            <img src=".\facilities\piano.svg" width="80px">
-            <h5 class="mt-3">PIANO</h5>
-        </div>
-        <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-            <img src=".\facilities\book-fill.svg" width="80px">
-            <h5 class="mt-3">LIBRARY</h5>
-        </div>
-        <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-            <img src=".\facilities\massage.svg" width="80px">
-            <h5 class="mt-3">massage</h5>
-        </div>
-        <div class="col-lg-12 text-center mt-5">
-            <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More FACILITIES >>></a>
-        </div>
-    </div>
-</div>
 <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
 <div class="container">
     <div class="swiper swipper-testimonials">
@@ -493,11 +142,11 @@
         <div class="col-lg-4 col-md-8">
             <div class="bg-white p-4 rounded mb-4">
                 <h5>Call us</h5>
-                <a href="tel: 01 55 88 98 65" class="d-inline-block mb-2 text-decoration-none text-dark">
+                <a href="tel: 07 68 17 98 82" class="d-inline-block mb-2 text-decoration-none text-dark">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                 </svg>
-                    +33 01 55 88 98 65
+                    +33 7 68 17 98 82
                 </a>
                 <h5>Follow Us</h5>
                 <a href="#" class="d-inline-block mb-3  ">

@@ -7,6 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::view');
+$routes->get('/logement', 'Logement::view');
 
-$routes->get('facilities-page', 'FacilitiesController::facilities');
 $routes->get('admin-page', 'AdminController::admin');
