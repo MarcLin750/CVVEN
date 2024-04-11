@@ -2,9 +2,12 @@
 
 namespace App\Controllers;
 
-class Logement extends BaseController
+use App\Controllers\BaseController;
+use CodeIgniter\HTTP\ResponseInterface;
+
+class Users extends BaseController
 {
-    public function view(): string
+    public function logout(): string
     {
         // Charger la vue du header
         $header = view('template/header');
@@ -13,12 +16,12 @@ class Logement extends BaseController
         $navbar = view('components/navbar');
 
         // Charger la vue de la page d'accueil
-        $logement = view('pages/logement');
+        $profil = view('components/profil');
         
         // Charger la vue du footer
         $footer = view('template/footer');
 
         // Concaténer les vues du header, du contenu et du footer
-        return $header . $navbar . $logement . $footer;
+        return $header . $navbar . $profil . $footer;
     }
 }

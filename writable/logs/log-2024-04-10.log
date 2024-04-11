@@ -1,0 +1,52 @@
+INFO - 2024-04-10 07:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 07:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-10 07:29:23 --> ErrorException: require_once(../Database/connect.php): Failed to open stream: No such file or directory
+in APPPATH\Views\pages\logement.php on line 3.
+ 1 APPPATH\Views\pages\logement.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(../Database/connect.php): Failed to open stream: No such file or directory', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Views\\pages\\logement.php', 3)
+ 2 APPPATH\Views\pages\logement.php(3): require_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Views\\pages\\logement.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/logement', [], true)
+ 6 APPPATH\Controllers\Logement.php(16): view('pages/logement')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->view()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-10 07:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-10 07:29:41 --> ErrorException: require_once(./Database/connect.php): Failed to open stream: No such file or directory
+in APPPATH\Views\pages\logement.php on line 3.
+ 1 APPPATH\Views\pages\logement.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(./Database/connect.php): Failed to open stream: No such file or directory', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Views\\pages\\logement.php', 3)
+ 2 APPPATH\Views\pages\logement.php(3): require_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Views\\pages\\logement.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/logement', [], true)
+ 6 APPPATH\Controllers\Logement.php(16): view('pages/logement')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->view()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-10 07:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-10 07:29:57 --> ErrorException: require_once(./connect.php): Failed to open stream: No such file or directory
+in APPPATH\Views\pages\logement.php on line 3.
+ 1 APPPATH\Views\pages\logement.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(./connect.php): Failed to open stream: No such file or directory', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Views\\pages\\logement.php', 3)
+ 2 APPPATH\Views\pages\logement.php(3): require_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Views\\pages\\logement.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/logement', [], true)
+ 6 APPPATH\Controllers\Logement.php(16): view('pages/logement')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->view()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-10 07:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 07:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 07:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 07:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 08:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 10:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 10:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 10:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-10 10:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
