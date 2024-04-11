@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\logementModel;
+
 class Logement extends BaseController
 {
     public function view(): string

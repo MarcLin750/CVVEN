@@ -27,9 +27,9 @@ class Database extends Config
     public array $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '', // Remplacez par votre nom d'utilisateur MySQL
+        'username' => 'root', // Remplacez par votre nom d'utilisateur MySQL
         'password' => '',    // Remplacez par votre mot de passe MySQL
-        'database' => 'cvven',
+        'database' => 'cvven_db',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -41,7 +41,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 8080,
+        'port'     => 3306,
     ];
 
     /**

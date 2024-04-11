@@ -13,20 +13,20 @@ class Users extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'last_name',
-        'first_name',
-        'email',
-        'password'
+        'nom',
+        'prenom',
+        'mail',
+        'mdp'
     ];
 
     protected bool $allowEmptyInserts = false;
 
     // Dates
-    protected $useTimestamps = true;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+    // protected $useTimestamps = true;
+    // protected $dateFormat    = 'datetime';
+    // protected $createdField  = 'created_at';
+    // protected $updatedField  = 'updated_at';
+    // protected $deletedField  = 'deleted_at';
 
     // Validation
     protected $validationRules      = [];

@@ -32,21 +32,22 @@ class Auth extends BaseController
             
             $userModel = new \App\Models\Users();
 
-            $userCheck = $userModel->where('email', $data['email'])->first();
-            if(!$userCheck){
-                return redirect()->back()->withInput()->with('errors',['email' => 'L\'email saisi n\'existe pas']);
+            $user = $userModel->where('mail', $data['mail'])->first();
+
+            if(!$user){
+                return redirect()->back()->withInput()->with('errors',['mail' => 'Le mail saisi n\'existe pas']);
             }
            
-            $passwordCheck = password_verify($data['password'], $user->password);
-            if (!$passwordCheck) {
-                return redirect()->back()->withInput()->with('errors', ['password' => 'Le mot de passe ne correspond pas']);
+            $password = password_verify($data['mdp'], $user->mdp);
+            if (!$password) {
+                return redirect()->back()->withInput()->with('errors', ['mdp' => 'Le mot de passe ne correspond pas']);
             }
 
             session()->set('user',[
                 'id'=>$user->id,
-                'last_name'=>$user->last_name,
-                'first_name'=>$user->first_name,
-                'email'=>$user->email,
+                'nom'=>$user->nom,
+                'prenom'=>$user->prenom,
+                'mail'=>$user->mail,
             ]);
             return redirect()->to(base_url('users/profil'));
         }
@@ -57,13 +58,14 @@ class Auth extends BaseController
         $method = $this->request->getMethod('true');
         
         if($method === "POST"){
+            var_dump("Post true");
             $data = $this->request->getPost();
             $rules =[
-                'last_name' => 'required|max_length[255]|min_length[3]',
-                'first_name' => 'required|max_length[255]|min_length[3]',
-                'email' => 'required|valid_email|is_unique[users.email]',
-                'password' =>'required|min_length[8]',
-                'passwordConfirm' =>'required|matches[password]'
+                'nom' => 'required|max_length[255]|min_length[3]',
+                'prenom' => 'required|max_length[255]|min_length[3]',
+                'mail' => 'required|valid_email|is_unique[users.mail]',
+                'mdp' =>'required|min_length[8]',
+                'mdpConfirmed' =>'required|matches[mdp]'
             ];
             
             //Si les regles ne sont pas appliquées on retourne les erreurs de l'utilisateur
@@ -72,7 +74,7 @@ class Auth extends BaseController
                 return redirect()->back()->withInput();
             }
             
-            $data['password'] = password_hash($data['password'],PASSWORD_BCRYPT);
+            $data['mdp'] = password_hash($data['mdp'],PASSWORD_BCRYPT);
             
             $userModel = new \App\Models\Users();
             

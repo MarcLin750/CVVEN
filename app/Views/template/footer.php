@@ -4,10 +4,7 @@
             <div class="col-lg-4 p-4">
                 <h3 class="h-font fw-bold fs-3 mb-2 ">CVVEN</h3>
                 <p>
-                    Situé au cœur de Paris, notre hôtel de luxe cinq étoiles offre un mélange inégalé d'élégance et de confort. 
-                    Nos chambres somptueuses, nos restaurants raffinés et notre service impeccable vous promettent une expérience inoubliable dans la ville des lumières. 
-                    Profitez de notre emplacement central pour découvrir les trésors de Paris, puis détendez-vous dans notre spa de classe mondiale. 
-                    Vivez le luxe à son apogée dans notre établissement prestigieux.
+                    
                 </p>
 
             </div>

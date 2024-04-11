@@ -38,6 +38,28 @@
     </button>
 </div>
 
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Qui sommes-nous ?</h2>
+<div class="container">
+    <div class="card">
+        <div class="card-body text-center">
+            <h4 class="card-title">
+                Situé au cœur du Jura.
+            </h4>
+            Le CVVEN (Comité pour les Villages de Vacances de l'Education Nationale) est une association
+            régie par la loi de 1901, et qui joue le rôle de comité d'entreprise auprès de tous les agents
+            de l'Education Nationale.
+            <br/>
+            Le CVVEN dispose de 4 villages de vacances répartis dans toute la France : Les Rousses (Jura), La
+            Rochelle (Charente-Maritime), Saint-Anthème (Puy-de-Dôme), et Villefort (Lozère). Pendant les
+            congés scolaires, les villages peuvent être réservés par les agents adhérents et leur famille pour des
+            séjours d'une ou plusieurs semaines. Ces séjours de vacances sont subventionnés en fonction du
+            quotient familial. Les agents disposent sur place de services de restauration, d'animations,
+            d'équipements sportifs...
+            <br/>
+            Nos chambres somptueuses, nos restaurants raffinés et notre service impecable vous promettant une expérience inoubliable dans la ville très chaleureuse.
+        </div>
+    </div>
+</div>
 
 <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
