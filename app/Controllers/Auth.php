@@ -33,7 +33,7 @@ class Auth extends BaseController
             $userModel = new \App\Models\Users();
 
             $user = $userModel->where('mail', $data['mail'])->first();
-
+            
             if(!$user){
                 return redirect()->back()->withInput()->with('errors',['mail' => 'Le mail saisi n\'existe pas']);
             }

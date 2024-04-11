@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\logementModel;
+use App\Models\LogementModel;
 
 class Logement extends BaseController
 {
@@ -10,13 +10,20 @@ class Logement extends BaseController
     {
         // Charger la vue du header
         $header = view('template/header');
-        
+
         // add other content
         $navbar = view('components/navbar');
 
-        // Charger la vue de la page d'accueil
-        $logement = view('pages/logement');
-        
+        // Charger les données de la table logement
+        $logementModel = new LogementModel();
+        $data['logements'] = $logementModel->findAll();
+
+        // Compter le nombre de logements de catégorie 1
+        $data['nb_logements_cat_1'] = $logementModel->countCategory1();
+
+        // Charger la vue de la page logements et passer les données
+        $logement = view('pages/logement', $data);
+
         // Charger la vue du footer
         $footer = view('template/footer');
 

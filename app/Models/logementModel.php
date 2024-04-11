@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class logementModel extends Model
+class LogementModel extends Model
 {
     protected $table            = 'logement';
     protected $primaryKey       = 'id';
@@ -12,9 +12,9 @@ class logementModel extends Model
     protected bool $allowEmptyInserts = true;
 
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = true;
+    // protected $useSoftDeletes   = true;
 
-    protected $allowedFields    = ['details'];
+    protected $allowedFields    = ['numLogement', 'etage', 'aile', 'ville', 'categorie', 'details', 'nbrChambre', 'nbrLit', 'balcon']; // modifiée champs si besoin
 
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
@@ -25,4 +25,19 @@ class logementModel extends Model
     protected $validationRules      = [];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
+    
+    protected $allowCallbacks = true;
+    protected $beforeInsert   = [];
+    protected $afterInsert    = [];
+    protected $beforeUpdate   = [];
+    protected $afterUpdate    = [];
+    protected $beforeFind     = [];
+    protected $afterFind      = [];
+    protected $beforeDelete   = [];
+    protected $afterDelete    = [];
+    
+    public function countCategory1()
+    {
+        return $this->db->table('logement')->where('categorie', 1)->countAllResults();
+    }
 }
