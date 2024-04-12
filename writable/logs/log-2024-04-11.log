@@ -3865,3 +3865,47 @@ in SYSTEMPATH\Model.php on line 874.
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
 INFO - 2024-04-11 14:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-11 14:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-11 18:48:36 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cvven_db', 3306, '', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->view()
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->view()
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#11 {main}
+CRITICAL - 2024-04-11 18:48:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `logement`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Logement.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->view()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')

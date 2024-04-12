@@ -1,0 +1,32 @@
+CRITICAL - 2024-04-12 20:40:00 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::{closure}(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 890 and exactly 1 expected
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(890): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-12 20:40:20 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::{closure}(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 890 and exactly 1 expected
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(890): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-12 20:42:11 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::{closure}(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 890 and exactly 1 expected
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(890): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-12 20:43:32 --> TypeError: CodeIgniter\Router\RouteCollection::match(): Argument #1 ($verbs) must be of type array, string given, called in C:\Users\marcl\xampp\htdocs\CVVEN\app\Config\Routes.php on line 11
+in SYSTEMPATH\Router\RouteCollection.php on line 998.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Router\RouteCollection->match('view', 'logement::view')
+ 2 SYSTEMPATH\Router\RouteCollection.php(779): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(10): CodeIgniter\Router\RouteCollection->group('logement', Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(345): require('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
