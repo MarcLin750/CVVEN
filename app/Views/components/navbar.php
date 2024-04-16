@@ -10,7 +10,7 @@
                     <a class="nav-link active me-2" aria-current="page" href="/">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-2" href="/logement/view">Logement</a>
+                    <a class="nav-link me-2" href="/logement/">Logement</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link me-2" href="/">Dirvers</a>

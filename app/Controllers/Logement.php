@@ -6,43 +6,98 @@ use App\Models\LogementModel;
 
 class Logement extends BaseController
 {
-    
     protected $header;
     protected $navbar;
-
-    protected $register;
-
     protected $footer;
-    public function __construct() 
+
+    protected $logementData;
+    protected $data;
+
+    public function __construct()
     {
         $this->header = view('template/header');
         $this->navbar = view('components/navbar');
-
-        $this->register = view('components/register');
-
         $this->footer = view('template/footer');
-    }
-    public function view(): string
-    {
 
         // Charger les données de la table logement
-        $logementModel = new LogementModel();
-        $data['logements'] = $logementModel->findAll();
+        $this->logementModel = new LogementModel();
+    }
 
-        // Compter le nombre de logements de catégorie 1
-        $data['nb_logements_cat_1'] = $logementModel->countCategory1();
-        $data['nb_logements_cat_2'] = $logementModel->countCategory2();
-        $data['nb_logements_cat_3'] = $logementModel->countCategory3();
-        $data['nb_logements_cat_4'] = $logementModel->countCategory4();
-        $data['nb_logements_cat_5'] = $logementModel->countCategory5();
-
+    public function view(): string
+    {
         // Charger la vue de la page logements et passer les données
+        $data['logements'] = [];
+        $data['nbr_logement_type1'] = 0;
+        $data['nbr_logement_type2'] = 0;
+        $data['nbr_logement_type3'] = 0;
+        $data['nbr_logement_type4'] = 0;
+        $data['nbr_logement_type5'] = 0;
+
+        // Récupérer les logements de chaque catégorie et compter le nombre de logements pour chaque catégorie
+        $logements1 = $this->logementModel->where('categorie', 1)->where('reserver', 0)->findAll();
+        $data['logements'][1] = $logements1;
+        $data['nbr_logement_type1'] = count($logements1);
+
+        $logements2 = $this->logementModel->where('categorie', 2)->where('reserver', 0)->findAll();
+        $data['logements'][2] = $logements2;
+        $data['nbr_logement_type2'] = count($logements2);
+
+        $logements3 = $this->logementModel->where('categorie', 3)->where('reserver', 0)->findAll();
+        $data['logements'][3] = $logements3;
+        $data['nbr_logement_type3'] = count($logements3);
+
+        $logements4 = $this->logementModel->where('categorie', 4)->where('reserver', 0)->findAll();
+        $data['logements'][4] = $logements4;
+        $data['nbr_logement_type4'] = count($logements4);
+
+        $logements5 = $this->logementModel->where('categorie', 5)->where('reserver', 0)->findAll();
+        $data['logements'][5] = $logements5;
+        $data['nbr_logement_type5'] = count($logements5);
+
         $logement = view('pages/logement', $data);
 
         // Concaténer les vues du header, du contenu et du footer
         return $this->header . $this->navbar . $logement . $this->footer;
     }
 
-    
-
+    public function type1(): string
+    {
+        $logements1 = $this->logementModel->where('categorie', 1)->where('reserver', 0)->findAll();
+        $data['logements'] = $logements1;
+        $data['nbr_logement_type1'] = count($logements1);
+        $type1 = view('pages/logement/type1', $data);
+        return $this->header . $this->navbar . $type1 . $this->footer;
+    }
+    public function type2(): string
+    {
+        $logements2 = $this->logementModel->where('categorie', 2)->where('reserver', 0)->findAll();
+        $data['logements'] = $logements2;
+        $data['nbr_logement_type2'] = count($logements2);
+        $type2 = view('pages/logement/type2', $data);
+        return $this->header . $this->navbar . $type2 . $this->footer;
+    }
+    public function type3(): string
+    {
+        $logements3 = $this->logementModel->where('categorie', 3)->where('reserver', 0)->findAll();
+        $data['logements'] = $logements3;
+        $data['nbr_logement_type3'] = count($logements3);
+        $type3 = view('pages/logement/type3', $data);
+        return $this->header . $this->navbar . $type3 . $this->footer;
+    }
+    public function type4(): string
+    {
+        $logements4 = $this->logementModel->where('categorie', 4)->where('reserver', 0)->findAll();
+        $data['logements'] = $logements4;
+        $data['nbr_logement_type4'] = count($logements4);
+        $type4 = view('pages/logement/type4', $data);
+        return $this->header . $this->navbar . $type4 . $this->footer;
+    }
+    public function type5(): string
+    {
+        $logements5 = $this->logementModel->where('categorie', 5)->where('reserver', 0)->findAll();
+        $data['logements'] = $logements5;
+        $data['nbr_logement_type5'] = count($logements5);
+        $type5 = view('pages/logement/type5', $data);
+        return $this->header . $this->navbar . $type5 . $this->footer;
+    }
 }

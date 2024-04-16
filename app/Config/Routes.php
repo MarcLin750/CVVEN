@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/', 'Home::view');
 $routes->group('logement', function(RouteCollection $routes){
-    $routes->get('view','logement::view');
+    $routes->get('/','logement::view');
     $routes->get('type1','logement::type1');
     $routes->get('type2','logement::type2');
     $routes->get('type3','logement::type3');
