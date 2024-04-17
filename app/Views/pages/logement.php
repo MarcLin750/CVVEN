@@ -7,7 +7,7 @@
                 <div class="card">
                     <img src="../carousel/room1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Logement familiale</h5>
+                        <h5 class="card-title">Logement familial</h5>
                         <p class="card-text">Entrée, 2 chambres à 2 lits avec coin toilette (douche, wc) et balcon.</p>
                         <p>Nombre de logement disponible : <?= $nbr_logement_type1 ?></p>
                     </div>

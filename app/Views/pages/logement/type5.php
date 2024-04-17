@@ -1,34 +1,26 @@
-<h1>Logement liste type 5</h1>
-
-<p>Nombre de logement disponible: <?= $nbr_logement_type5 ?>/1.</p>
-
-<table>
-    <thead>
-        <tr>
-            <th>Numéro de logement</th>
-            <th>Étage</th>
-            <th>Aile</th>
-            <th>Ville</th>
-            <th>Catégorie</th>
-            <th>Détails</th>
-            <th>Nombre de chambres</th>
-            <th>Nombre de lits</th>
-            <th>Balcon</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($logements as $logement) : ?>
-            <tr>
-                <td><?= $logement['numLogement'] ?></td>
-                <td><?= $logement['etage'] ?></td>
-                <td><?= $logement['aile'] ?></td>
-                <td><?= $logement['ville'] ?></td>
-                <td><?= $logement['categorie'] ?></td>
-                <td><?= $logement['details'] ?></td>
-                <td><?= $logement['nbrChambre'] ?></td>
-                <td><?= $logement['nbrLit'] ?></td>
-                <td><?= $logement['balcon'] ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
+<div class="container" style='margin-top: 28px;'>
+    <div class="card">
+        <div class="card-header">
+            <h1>Logement adapté pour les personnes à mobilité réduite</h1>
+            <p>Nombre de logement disponible: <?= $nbr_logement_type5 ?>/1.</p>
+        </div>
+        <div class="card-body">
+            <div class="list-group list-group-flush" style="max-height: 400px; overflow-y: auto;">
+                <?php foreach ($logements as $logement) : ?>
+                    <a href="<?= site_url('logement/') . $logement['id'] ?>" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"><?= $logement['numLogement'] ?></h5>
+                            <small><?= $logement['ville'] ?></small>
+                        </div>
+                        <p class="mb-1"><?= $logement['details'] ?></p>
+                        <small class="text-muted">
+                            <?= $logement['nbrChambre'] ?> chambres,
+                            <?= $logement['nbrLit'] ?> lits,
+                            <?= ($logement['balcon']) ? 'Balcon' : 'Pas de balcon' ?>
+                        </small>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</div>
