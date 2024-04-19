@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\LogementModel;
 use App\Models\ReservationModel;
+use App\Models\ReservationLogementModel;
 
 class Logement extends BaseController
 {
@@ -23,6 +24,7 @@ class Logement extends BaseController
         // Charger les modèles
         $this->logementModel = new LogementModel();
         $this->reservationModel = new ReservationModel();
+        $this->reservationLogementModel = new ReservationLogementModel();
     }
 
     public function view(): string
@@ -133,11 +135,10 @@ class Logement extends BaseController
                 // Calculer le prix total
                 $startDate = strtotime($formData['start_date']);
                 $endDate = strtotime($formData['end_date']);
-                $diffDays = ceil(($endDate - $startDate) / (60 * 60 * 24)) + 1;
+                $diffDays = ceil(($endDate - $startDate) / (60 * 60 * 24));
                 $totalPrice = $diffDays * $logement["prix"];
 
                 $userSession = session()->get('user');
-                $isLoggedIn = $userSession && array_key_exists('isLoggedIn', $userSession) && $userSession['isLoggedIn'];
 
                 // Insérer les données dans la table de réservation
                 $reservationData = [
@@ -148,15 +149,24 @@ class Logement extends BaseController
                     'userId' => $userSession['id']
                 ];
 
-                var_dump($reservationData);
-
                 $this->reservationModel->insert($reservationData);
+
+                // $reservation = $this->reservationModel->getLogementById($id);
+
+                // $reservationLogementData = [
+                //     'logementId' => $logement["id"],
+                //     'reservationId' => $reservation['id']
+                // ];
+
+                // var_dump($reservationData);
+
+                $this->reservationLogementModel->insert($reservationLogementData);
 
                 // Mettre à jour la colonne reserver de la table logement à true
                 $this->logementModel->update($id, ['reserver' => 1]);
 
                 // Rediriger l'utilisateur vers une page de confirmation
-                // return redirect()->to('/');
+                return redirect()->to('/logement');
             } else {
                 // Passer les données du logement à la vue
                 $data['logement'] = $logement;
