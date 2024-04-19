@@ -13,7 +13,7 @@
                     <a class="nav-link me-2" href="/logement/">Logement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-2" href="/">Matériel</a>
+                    <a class="nav-link me-2" href="/materiel/">Matériel</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link me-2" href="/">Salle de colloque</a>
