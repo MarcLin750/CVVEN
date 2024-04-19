@@ -19,7 +19,6 @@
             <td>
                 <a href="<?= site_url('admin/reservations/confirm/' . $reservation['id']) ?>">Confirmer</a>
                 <a href="<?= site_url('admin/reservations/cancel/' . $reservation['id']) ?>">Annuler</a>
-                <?php "Coucou "; ?>
             </td>
         </tr>
         <?php endforeach; ?>

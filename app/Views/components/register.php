@@ -1,4 +1,3 @@
-
 <div class="container" style="height: 60vh;">
     <div class="row">
         <div class="col">
