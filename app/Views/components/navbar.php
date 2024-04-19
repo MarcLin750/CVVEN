@@ -32,7 +32,7 @@
                 $isLoggedIn = $userSession && array_key_exists('isLoggedIn', $userSession) && $userSession['isLoggedIn'];
                 if ($isLoggedIn): ?>
                     <span class="navbar-text me-3">
-                        Bonjour, <?= $userSession['nom'] ?>
+                        Bonjour, <?= $userSession['prenom'] ?>
                     </span>
                     <?php if ($isAdmin): ?>
                         <a href="<?= site_url('admin/dashboard'); ?>" class="btn btn-info me-2">Admin Panel</a>

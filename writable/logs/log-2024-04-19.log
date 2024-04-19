@@ -2531,3 +2531,1064 @@ in SYSTEMPATH\BaseModel.php on line 788.
  6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 17:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 17:19:36 --> Error: Call to a member function diff() on string
+in APPPATH\Controllers\Logement.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 17:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 17:19:40 --> Error: Call to a member function diff() on string
+in APPPATH\Controllers\Logement.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 17:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 17:20:30 --> ErrorException: Attempt to read property "days" on string
+in APPPATH\Controllers\Logement.php on line 139.
+ 1 APPPATH\Controllers\Logement.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "days" on string', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\Logement.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 17:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 17:21:27 --> Error: Call to a member function format() on int
+in APPPATH\Controllers\Logement.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 17:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 17:23:12 --> Error: Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Logement.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 17:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 17:25:01 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Logement.php(98): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 17:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 17:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 17:28:45 --> Error: Call to a member function setRules() on null
+in APPPATH\Controllers\Logement.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 18:33:41 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Logement.php(162): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 18:38:24 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Logement.php(162): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 18:40:44 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Logement.php(162): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 18:48:24 --> ParseError: syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Logement.php on line 182.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\logement.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\logement')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\logement')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\logement', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 18:48:45 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Logement.php on line 133.
+ 1 APPPATH\Controllers\Logement.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\Logement.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 18:58:26 --> Error: Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Logement.php on line 134.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 18:58:50 --> Error: Call to a member function format() on string
+in APPPATH\Controllers\Logement.php on line 135.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 18:59:14 --> Error: Call to undefined function 2024-04-19()
+in APPPATH\Controllers\Logement.php on line 135.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 18:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 18:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 19:03:19 --> ErrorException: Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH\Controllers\Logement.php on line 134.
+ 1 APPPATH\Controllers\Logement.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\Logement.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 19:03:42 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Controllers\Logement.php on line 135.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:06:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(155): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:06:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:07 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:06:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(155): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:06:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:38 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:06:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(155): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:06:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:39 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:06:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(155): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:06:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:06:43 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:07:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(155): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:07:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:07 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:07:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(155): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:07:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:07 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:07:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(155): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:07:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:08 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(155): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:07:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(154): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:07:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(154): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(154): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:07:40 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(154): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 19:10:49 --> ErrorException: A non-numeric value encountered
+in APPPATH\Controllers\Logement.php on line 139.
+ 1 APPPATH\Controllers\Logement.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\Logement.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 19:11:34 --> ErrorException: A non-numeric value encountered
+in APPPATH\Controllers\Logement.php on line 139.
+ 1 APPPATH\Controllers\Logement.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\Logement.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:15:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(153): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:15:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(153): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:15:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(153): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:15:17 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(153): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:18:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:18:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:18:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:18:33 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:18:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:18:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:18:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:18:35 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:18:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:18:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:18:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:18:39 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`prix`) VALUES (241.68)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`prix`) VALUES (241.68)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`prix`) VALUES (:prix:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A116')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:22:06 --> mysqli_sql_exception: Column 'userId' cannot be null in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(150): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:22:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'userId' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (:dateDebut:, :dateFin:, :nbrPersonne:, :prix:, :userId:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(150): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:22:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'userId' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (:dateDebut:, :dateFin:, :nbrPersonne:, :prix:, :userId:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(150): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:22:06 --> [Caused by] mysqli_sql_exception: Column 'userId' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (:dateDebut:, :dateFin:, :nbrPersonne:, :prix:, :userId:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(150): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 19:22:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)) in C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\marcl\xampp\htdocs\CVVEN\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\marcl\xampp\htdocs\CVVEN\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\marcl\xampp\htdocs\CVVEN\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\marcl\xampp\htdocs\CVVEN\app\Controllers\Logement.php(150): CodeIgniter\Model->insert(Array)
+#8 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+#9 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+#10 C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\marcl\xampp\htdocs\CVVEN\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\marcl\xampp\htdocs\CVVEN\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\...')
+#13 {main}
+CRITICAL - 2024-04-19 19:22:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (:dateDebut:, :dateFin:, :nbrPersonne:, :prix:, :userId:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Logement.php(150): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:22:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, \'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, \'0\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (:dateDebut:, :dateFin:, :nbrPersonne:, :prix:, :userId:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Logement.php(150): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 19:22:17 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cvven_db`.`reservation`, CONSTRAINT `reservation_userId_PK` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (\'2024-04-19\', \'2024-04-20\', \'4\', 200.56, \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation` (`dateDebut`, `dateFin`, `nbrPersonne`, `prix`, `userId`) VALUES (:dateDebut:, :dateFin:, :nbrPersonne:, :prix:, :userId:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Logement.php(150): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A101')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 19:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 19:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

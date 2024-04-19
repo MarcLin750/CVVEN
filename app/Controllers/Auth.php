@@ -19,40 +19,40 @@ class Auth extends BaseController
         $this->footer = view('template/footer');
     }
     public function login()
-{
-    if ($this->request->getMethod() === 'post') {
-        $data = $this->request->getPost();
+    {
+        if ($this->request->getMethod() === 'post') {
+            $data = $this->request->getPost();
+            
+            $userModel = new \App\Models\Users();
+            $user = $userModel->where('mail', $data['mail'])->first();
+            
+            if (!$user) {
+                return redirect()->back()->withInput()->with('errors', ['mail' => 'Le mail saisi n\'existe pas']);
+            }
+            
+            if (!password_verify($data['mdp'], $user->mdp)) {
+                return redirect()->back()->withInput()->with('errors', ['mdp' => 'Le mot de passe ne correspond pas']);
+            }
         
-        $userModel = new \App\Models\Users();
-        $user = $userModel->where('mail', $data['mail'])->first();
+            $sessionData = [
+                'id' => $user->id,
+                'nom' => $user->nom,
+                'prenom' => $user->prenom,
+                'mail' => $user->mail,
+                'isLoggedIn' => true
+            ];
         
-        if (!$user) {
-            return redirect()->back()->withInput()->with('errors', ['mail' => 'Le mail saisi n\'existe pas']);
-        }
+            if ($user->mail === 'admin77420@gmail.com') {
+                $sessionData['isAdmin'] = true;
+            }
         
-        if (!password_verify($data['mdp'], $user->mdp)) {
-            return redirect()->back()->withInput()->with('errors', ['mdp' => 'Le mot de passe ne correspond pas']);
+            session()->set('user', $sessionData);
+        
+            return redirect()->to('/users/profil');
         }
-
-        $sessionData = [
-            'id' => $user->id,
-            'nom' => $user->nom,
-            'prenom' => $user->prenom,
-            'mail' => $user->mail,
-            'isLoggedIn' => true
-        ];
-
-        if ($user->mail === 'admin77420@gmail.com') {
-            $sessionData['isAdmin'] = true;
-        }
-
-        session()->set('user', $sessionData);
-
-        return redirect()->to('/users/profil');
+    
+        return $this->header . $this->navbar . $this->login . $this->footer;
     }
-
-    return $this->header . $this->navbar . $this->login . $this->footer;
-}
    
     public function register()
     {

@@ -20,6 +20,7 @@ class Logement extends BaseController
         $this->navbar = view('components/navbar');
         $this->footer = view('template/footer');
 
+        // Charger les modèles
         $this->logementModel = new LogementModel();
         $this->reservationModel = new ReservationModel();
     }
@@ -106,11 +107,11 @@ class Logement extends BaseController
     public function getLogement($id)
     {
         $logement = $this->logementModel->getLogementById($id);
-    
+
         if ($logement) {
             // Vérifier si le formulaire a été soumis
             if ($this->request->getMethod() === 'post') {
-                
+
                 // Ajouter des règles de validation
                 $rules = [
                     'start_date' => 'required|valid_date',
@@ -120,45 +121,46 @@ class Logement extends BaseController
 
                 // Vérifier si les règles de validation sont respectées
                 if (!$this->validate($rules)) {
-                    // session()->setFlashdata('errors', $this->validator->getErrors());
-                    // return redirect()->back()->withInput();
                     // Si les règles de validation ne sont pas respectées, afficher à nouveau la vue du formulaire avec les erreurs de validation
                     $data['logement'] = $logement;
                     $data['validation'] = $this->validator; // Passer les erreurs de validation à la vue
                     return $this->header . $this->navbar . view('pages/logement/form', $data) . $this->footer;
                 }
 
-                var_dump($this->request->getPost());
-            
                 // Traitement des données du formulaire de réservation
                 $formData = $this->request->getPost();
-            
+
                 // Calculer le prix total
-                $startDate = new \DateTime($this->request->getPost('start_date'));
-                $endDate = new \DateTime($this->request->getPost('end_date'));
-                $diffDays = $startDate->diff($endDate)->days + 1;
+                $startDate = strtotime($formData['start_date']);
+                $endDate = strtotime($formData['end_date']);
+                $diffDays = ceil(($endDate - $startDate) / (60 * 60 * 24)) + 1;
                 $totalPrice = $diffDays * $logement["prix"];
-            
+
+                $userSession = session()->get('user');
+                $isLoggedIn = $userSession && array_key_exists('isLoggedIn', $userSession) && $userSession['isLoggedIn'];
+
                 // Insérer les données dans la table de réservation
                 $reservationData = [
-                    'start_date' => $startDate->format('Y-m-d'),
-                    'end_date' => $endDate->format('Y-m-d'),
-                    'nbr_personne' => $this->request->getPost('nbr_personne'),
-                    'prix_total' => $totalPrice,
-                    'user_id' => NULL
+                    'dateDebut' => date('Y-m-d', $startDate),
+                    'dateFin' => date('Y-m-d', $endDate),
+                    'nbrPersonne' => $formData['nbr_personne'],
+                    'prix' => $totalPrice,
+                    'userId' => $userSession['id']
                 ];
 
+                var_dump($reservationData);
+
                 $this->reservationModel->insert($reservationData);
-            
-                // Mettre à jour la colonne reserve de la table logement à true
+
+                // Mettre à jour la colonne reserver de la table logement à true
                 $this->logementModel->update($id, ['reserver' => 1]);
-            
+
                 // Rediriger l'utilisateur vers une page de confirmation
-                return redirect()->to('/');
+                // return redirect()->to('/');
             } else {
                 // Passer les données du logement à la vue
                 $data['logement'] = $logement;
-            
+
                 // Concaténer les vues du header, du contenu et du footer
                 return $this->header . $this->navbar . view('pages/logement/form', $data) . $this->footer;
             }
