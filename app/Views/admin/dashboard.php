@@ -1,6 +1,6 @@
 <h1>Dashboard Admin</h1>
 <a href="<?= site_url('admin/users'); ?>">Gérer les utilisateurs</a>
-<!-- Liste des réservations -->
+<!-- Liste des réservations(se) -->
 <table>
     <tr>
         <th>ID</th>
