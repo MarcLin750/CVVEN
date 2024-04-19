@@ -2,7 +2,22 @@
     <div class="container-fluid bg-white mt-5">
         <div class="row">
             <div class="col-lg-4 p-4">
-                <h3 class="h-font fw-bold fs-3 mb-2 ">CVVEN</h3>
+                <h6 class="h-font fw-bold fs-3 mb-2 ">&copy;CVVEN_MKSL</h6>
+                <strong>Collaborateurs:</strong>
+                <ul>
+                    <li>
+                        LIN Marc
+                    </li>
+                    <li>
+                        GIANG Kevin
+                    </li>
+                    <li>
+                        THAYAPARAN Senthooran
+                    </li>
+                    <li>
+                        MAHADZERE Loïc
+                    </li>
+                </ul>
             </div>
             <div class="col-lg-4 p-4">
                 <h5 class="mb-3">Links</h5>

@@ -48,7 +48,7 @@ class Auth extends BaseController
 
             session()->set('user', $sessionData);
 
-            return redirect()->to('/users/profil');
+            return redirect()->to('/logement');
         }
 
         return $this->header . $this->navbar . $this->login . $this->footer;
