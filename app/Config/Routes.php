@@ -7,6 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::view');
+
 $routes->group('logement', function(RouteCollection $routes){
     $routes->get('/','logement::view');
     $routes->get('type1','logement::type1');
@@ -14,6 +15,7 @@ $routes->group('logement', function(RouteCollection $routes){
     $routes->get('type3','logement::type3');
     $routes->get('type4','logement::type4');
     $routes->get('type5','logement::type5');
+    $routes->get('(:segment)', 'logement::getLogement/$1');
 });
 
 $routes->group('auth',  function(RouteCollection $routes){
@@ -24,4 +26,11 @@ $routes->group('auth',  function(RouteCollection $routes){
 
 $routes->group('users', ['filter' => 'authFilter'],function(RouteCollection $routes){
     $routes->get('profil','Users::logout');
+});
+
+$routes->group('admin', ['filter' => 'authFilter'], function(RouteCollection $routes) {
+    $routes->get('dashboard', 'Admin::index');
+    $routes->get('reservations/confirm/(:num)', 'Admin::confirmReservation/$1');
+    $routes->get('reservations/cancel/(:num)', 'Admin::cancelReservation/$1');
+    $routes->get('users', 'Admin::showUsers');
 });

@@ -100,4 +100,32 @@ class Logement extends BaseController
         $type5 = view('pages/logement/type5', $data);
         return $this->header . $this->navbar . $type5 . $this->footer;
     }
+
+    public function getLogement($id): string
+{
+    // Récupérer les détails du logement avec l'ID donné
+    $logement = $this->logementModel->getLogementById($id);
+
+    // Vérifier si le logement existe
+    if ($logement) {
+        // Vérifier si le formulaire a été soumis
+        if ($this->request->getMethod() === 'post') {
+            // Traitement des données du formulaire de réservation
+            $formData = $this->request->getPost();
+            // Insérez le code pour valider et enregistrer les données de réservation dans la base de données
+            // Rediriger l'utilisateur vers une page de confirmation ou une autre page appropriée
+            return redirect()->to('/confirmation');
+        } else {
+            // Passer les données du logement à la vue
+            $data['logement'] = $logement;
+
+            // Concaténer les vues du header, du contenu et du footer
+            return $this->header . $this->navbar . view('pages/logement/form', $data) . $this->footer;
+        }
+    } else {
+        // Rediriger vers la page d'erreur 404
+        return $this->header . $this->navbar . view('errors/html/error_404') . $this->footer;
+    }
+}
+
 }
