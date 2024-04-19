@@ -28,7 +28,7 @@ class AuthFilter implements FilterInterface
         $session = session();
         
         if(!$session->get('user')){
-            return redirect()->to(base_url('auth/login'))->with('erros', ['auth '=> 'Veuillez vous connectez']);
+            return redirect()->to(base_url('auth/login'))->with('errors', ['auth '=> 'Veuillez vous connectez']);
         }
     }
 
