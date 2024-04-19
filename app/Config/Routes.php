@@ -18,6 +18,10 @@ $routes->group('logement', function(RouteCollection $routes){
     $routes->match(['get', 'post'], '(:segment)', 'logement::getLogement/$1');
 });
 
+$routes->group('materiel', function(RouteCollection $routes){
+    $routes->get('/','materiel::view');
+});
+
 $routes->group('auth',  function(RouteCollection $routes){
     $routes->match(['get', 'post'], 'login', 'Auth::login');
     $routes->match(['get','post'], 'register', 'Auth::register');
