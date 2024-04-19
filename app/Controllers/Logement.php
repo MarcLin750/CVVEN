@@ -103,35 +103,42 @@ class Logement extends BaseController
         return $this->header . $this->navbar . $type5 . $this->footer;
     }
 
-    public function getLogement($id): string
+    public function getLogement($id)
     {
         $logement = $this->logementModel->getLogementById($id);
-
+    
         if ($logement) {
             // Vérifier si le formulaire a été soumis
             if ($this->request->getMethod() === 'post') {
-                // Traitement des données du formulaire de réservation
-                $formData = $this->request->getPost();
-
+                
                 // Ajouter des règles de validation
                 $rules = [
                     'start_date' => 'required|valid_date',
-                    'end_date' => 'required|valid_date|greater_than[start_date]',
-                    'nbr_personne' => 'required|greater_than[0]|less_than_or_equal_to[' . $logement["nbrLit"] . ']'
+                    'end_date' => 'required|valid_date',
+                    'nbr_personne' => 'required|max_length[1]'
                 ];
 
                 // Vérifier si les règles de validation sont respectées
                 if (!$this->validate($rules)) {
-                    // Si les règles de validation ne sont pas respectées, rediriger avec les erreurs de validation
-                    return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+                    // session()->setFlashdata('errors', $this->validator->getErrors());
+                    // return redirect()->back()->withInput();
+                    // Si les règles de validation ne sont pas respectées, afficher à nouveau la vue du formulaire avec les erreurs de validation
+                    $data['logement'] = $logement;
+                    $data['validation'] = $this->validator; // Passer les erreurs de validation à la vue
+                    return $this->header . $this->navbar . view('pages/logement/form', $data) . $this->footer;
                 }
 
+                var_dump($this->request->getPost());
+            
+                // Traitement des données du formulaire de réservation
+                $formData = $this->request->getPost();
+            
                 // Calculer le prix total
                 $startDate = new \DateTime($this->request->getPost('start_date'));
                 $endDate = new \DateTime($this->request->getPost('end_date'));
                 $diffDays = $startDate->diff($endDate)->days + 1;
                 $totalPrice = $diffDays * $logement["prix"];
-
+            
                 // Insérer les données dans la table de réservation
                 $reservationData = [
                     'start_date' => $startDate->format('Y-m-d'),
@@ -140,17 +147,18 @@ class Logement extends BaseController
                     'prix_total' => $totalPrice,
                     'user_id' => NULL
                 ];
-                $this->reservationModel->insert($reservationData);
 
+                $this->reservationModel->insert($reservationData);
+            
                 // Mettre à jour la colonne reserve de la table logement à true
                 $this->logementModel->update($id, ['reserver' => 1]);
-
+            
                 // Rediriger l'utilisateur vers une page de confirmation
                 return redirect()->to('/');
             } else {
                 // Passer les données du logement à la vue
                 $data['logement'] = $logement;
-
+            
                 // Concaténer les vues du header, du contenu et du footer
                 return $this->header . $this->navbar . view('pages/logement/form', $data) . $this->footer;
             }

@@ -35,7 +35,7 @@
                                           <label class="input-group-text" for="nbr_personne">Nombre de personnes:</label>
                                           <input type="number" class="form-control" id="nbr_personne" name="nbr_personne" min="1" max="<?php echo $logement["nbrLit"]; ?>" value="<?php echo $logement["nbrLit"]; ?>" required>
                                         </div>
-                                        <button type="submit" class="btn btn-primary" formtarget="_parent">Réserver</button>
+                                        <button type="submit" class="btn btn-primary">Réserver</button>
                                     </form>
                                 </div>
                             </div>
