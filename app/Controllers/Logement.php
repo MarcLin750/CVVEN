@@ -34,6 +34,7 @@ class Logement extends BaseController
         $data['nbr_logement_type5'] = 0;
 
         // Récupérer les logements de chaque catégorie et compter le nombre de logements pour chaque catégorie
+        // Filtrer les logements par catégorie et par réservation
         $logements1 = $this->logementModel->where('categorie', 1)->where('reserver', 0)->findAll();
         $data['logements'][1] = $logements1;
         $data['nbr_logement_type1'] = count($logements1);
@@ -102,30 +103,29 @@ class Logement extends BaseController
     }
 
     public function getLogement($id): string
-{
-    // Récupérer les détails du logement avec l'ID donné
-    $logement = $this->logementModel->getLogementById($id);
+    {
+        // Récupérer les détails du logement avec l'ID donné
+        $logement = $this->logementModel->getLogementById($id);
 
-    // Vérifier si le logement existe
-    if ($logement) {
-        // Vérifier si le formulaire a été soumis
-        if ($this->request->getMethod() === 'post') {
-            // Traitement des données du formulaire de réservation
-            $formData = $this->request->getPost();
-            // Insérez le code pour valider et enregistrer les données de réservation dans la base de données
-            // Rediriger l'utilisateur vers une page de confirmation ou une autre page appropriée
-            return redirect()->to('/confirmation');
+        // Vérifier si le logement existe
+        if ($logement) {
+            // Vérifier si le formulaire a été soumis
+            if ($this->request->getMethod() === 'post') {
+                // Traitement des données du formulaire de réservation
+                $formData = $this->request->getPost();
+                // Insérez le code pour valider et enregistrer les données de réservation dans la base de données
+                // Rediriger l'utilisateur vers une page de confirmation ou une autre page appropriée
+                return redirect()->to('/confirmation');
+            } else {
+                // Passer les données du logement à la vue
+                $data['logement'] = $logement;
+
+                // Concaténer les vues du header, du contenu et du footer
+                return $this->header . $this->navbar . view('pages/logement/form', $data) . $this->footer;
+            }
         } else {
-            // Passer les données du logement à la vue
-            $data['logement'] = $logement;
-
-            // Concaténer les vues du header, du contenu et du footer
-            return $this->header . $this->navbar . view('pages/logement/form', $data) . $this->footer;
+            // Rediriger vers la page d'erreur 404
+            return $this->header . $this->navbar . view('errors/html/error_404') . $this->footer;
         }
-    } else {
-        // Rediriger vers la page d'erreur 404
-        return $this->header . $this->navbar . view('errors/html/error_404') . $this->footer;
     }
-}
-
 }
