@@ -2,8 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Models\UsersModel;
+use App\Models\Users;
 use App\Models\ReservationModel;
+
 
 class Admin extends BaseController
 {
@@ -42,7 +43,7 @@ class Admin extends BaseController
 
     public function showUsers()
     {
-        $model = new UsersModel();
+        $model = new Users();
         $data['users'] = $model->findAll();
         return view('admin/users', $data);
     }
