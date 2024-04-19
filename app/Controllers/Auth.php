@@ -22,18 +22,18 @@ class Auth extends BaseController
     {
         if ($this->request->getMethod() === 'post') {
             $data = $this->request->getPost();
-            
+
             $userModel = new \App\Models\Users();
             $user = $userModel->where('mail', $data['mail'])->first();
-            
+
             if (!$user) {
                 return redirect()->back()->withInput()->with('errors', ['mail' => 'Le mail saisi n\'existe pas']);
             }
-            
+
             if (!password_verify($data['mdp'], $user->mdp)) {
                 return redirect()->back()->withInput()->with('errors', ['mdp' => 'Le mot de passe ne correspond pas']);
             }
-        
+
             $sessionData = [
                 'id' => $user->id,
                 'nom' => $user->nom,
@@ -41,19 +41,19 @@ class Auth extends BaseController
                 'mail' => $user->mail,
                 'isLoggedIn' => true
             ];
-        
+
             if ($user->mail === 'admin77420@gmail.com') {
                 $sessionData['isAdmin'] = true;
             }
-        
+
             session()->set('user', $sessionData);
-        
+
             return redirect()->to('/users/profil');
         }
-    
+
         return $this->header . $this->navbar . $this->login . $this->footer;
     }
-   
+    
     public function register()
     {
         if ($this->request->getMethod() === 'post') {
