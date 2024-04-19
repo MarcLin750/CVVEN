@@ -7,7 +7,7 @@
         <div class="card-body">
             <div class="list-group list-group-flush" style="max-height: 400px; overflow-y: auto;">
                 <?php foreach ($logements as $logement) : ?>
-                    <a href="<?= site_url('logement/') . $logement['id'] ?>" class="list-group-item list-group-item-action">
+                    <a href="<?=$logement['id'] ?>" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1"><?= $logement['id'] ?></h5>
                             <small><?= $logement['ville'] ?></small>

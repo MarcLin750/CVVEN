@@ -1476,3 +1476,544 @@ WARNING - 2024-04-19 09:42:36 --> [DEPRECATED] Creation of dynamic property App\
  3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:03:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:19:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:20:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:21:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:22:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:22:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:22:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:22:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:22:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 10:22:30 --> TypeError: App\Controllers\Logement::getLogement(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Logement.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A111')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:22:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:24:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:24:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:24:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:24:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:24:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:24:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-19 10:28:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Logement::$logementModel is deprecated in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 10:34:01 --> Error: Class "App\Models\ReservationModel" not found
+in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 10:34:07 --> Error: Class "App\Models\ReservationModel" not found
+in APPPATH\Controllers\Logement.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 10:58:57 --> Error: Call to a member function setRules() on null
+in APPPATH\Controllers\Logement.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A102')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 10:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 10:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 10:59:34 --> Error: Call to a member function setRules() on null
+in APPPATH\Controllers\Logement.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A102')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:02 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:04 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:04 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:05 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:05 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:06 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:07 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:02:07 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 11:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 11:02:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 11:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 11:02:41 --> ErrorException: Undefined variable $validator
+in APPPATH\Controllers\Logement.php on line 28.
+ 1 APPPATH\Controllers\Logement.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validator', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\Logement.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+CRITICAL - 2024-04-19 11:03:31 --> ArgumentCountError: Too few arguments to function App\Controllers\Logement::__construct(), 0 passed in C:\Users\marcl\xampp\htdocs\CVVEN\system\CodeIgniter.php on line 913 and exactly 1 expected
+in APPPATH\Controllers\Logement.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Logement->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 11:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 11:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 11:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 11:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 11:03:51 --> Error: Call to a member function setRules() on null
+in APPPATH\Controllers\Logement.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A111')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 11:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 11:05:03 --> Error: Call to a member function setRules() on null
+in APPPATH\Controllers\Logement.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A111')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 11:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 11:07:08 --> ErrorException: Undefined variable $rules
+in APPPATH\Controllers\Logement.php on line 117.
+ 1 APPPATH\Controllers\Logement.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rules', 'C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\app\\Controllers\\Logement.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A111')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 11:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 11:07:46 --> CodeIgniter\Validation\Exceptions\ValidationException: "less_than_or_equal_to" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('less_than_or_equal_to')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nbr_personne', 'nbr_personne', '2', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Logement.php(124): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A111')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')
+INFO - 2024-04-19 11:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 11:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 11:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-19 11:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 11:08:01 --> CodeIgniter\Validation\Exceptions\ValidationException: "less_than_or_equal_to" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('less_than_or_equal_to')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nbr_personne', 'nbr_personne', '2', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Logement.php(124): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Logement->getLogement('A111')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logement))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\marcl\\xampp\\htdocs\\CVVEN\\public\\index.php')

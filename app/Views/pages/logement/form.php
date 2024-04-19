@@ -22,7 +22,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Dates de réservation</h5>
                                     <hr>
-                                    <form action="/reservation" method="POST">
+                                    <form method="POST">
                                         <div class="input-group mb-3">
                                           <label class="input-group-text" for="start_date">Date de début:</label>
                                           <input type="date" class="form-control" id="start_date" name="start_date" value="<?php echo date('Y-m-d'); ?>" required>
@@ -31,6 +31,11 @@
                                           <label class="input-group-text" for="end_date">Date de fin:</label>
                                           <input type="date" class="form-control"  id="end_date" name="end_date" value="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
                                         </div>
+                                        <div class="input-group mb-3">
+                                          <label class="input-group-text" for="nbr_personne">Nombre de personnes:</label>
+                                          <input type="number" class="form-control" id="nbr_personne" name="nbr_personne" min="1" max="<?php echo $logement["nbrLit"]; ?>" value="<?php echo $logement["nbrLit"]; ?>" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" formtarget="_parent">Réserver</button>
                                     </form>
                                 </div>
                             </div>
@@ -45,7 +50,6 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" formtarget="_parent">Réserver</button>
                 </div>
             </div>
         </div>
