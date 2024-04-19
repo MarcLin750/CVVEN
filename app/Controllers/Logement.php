@@ -14,6 +14,7 @@ class Logement extends BaseController
 
     protected $logementModel;
     protected $reservationModel;
+    protected $reservationLogementModel;
 
     public function __construct()
     {
@@ -160,7 +161,7 @@ class Logement extends BaseController
 
                 // var_dump($reservationData);
 
-                $this->reservationLogementModel->insert($reservationLogementData);
+                // $this->reservationLogementModel->insert($reservationLogementData);
 
                 // Mettre à jour la colonne reserver de la table logement à true
                 $this->logementModel->update($id, ['reserver' => 1]);
