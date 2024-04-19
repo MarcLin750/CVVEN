@@ -1,6 +1,6 @@
 <h1>Dashboard Admin</h1>
 <a href="<?= site_url('admin/users'); ?>">Gérer les utilisateurs</a>
-<!-- Liste des réservations -->
+<!-- Liste des réservations(se) -->
 <table>
     <tr>
         <th>ID</th>
@@ -19,6 +19,7 @@
             <td>
                 <a href="<?= site_url('admin/reservations/confirm/' . $reservation['id']) ?>">Confirmer</a>
                 <a href="<?= site_url('admin/reservations/cancel/' . $reservation['id']) ?>">Annuler</a>
+                <?php "Coucou "; ?>
             </td>
         </tr>
         <?php endforeach; ?>
