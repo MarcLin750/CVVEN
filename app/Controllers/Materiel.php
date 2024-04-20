@@ -125,4 +125,43 @@ class Materiel extends BaseController
         $type7 = view('pages/materiel/type7', $data);
         return $this->header . $this->navbar . $type7 . $this->footer;
     }
+
+    public function reserveMateriel($id)
+    {
+        $materiel = $this->materielModel->find($id);
+
+        if ($materiel) {
+            if ($this->request->getMethod() === 'post') {
+                // Ajoutez des règles de validation si nécessaire
+
+                // Traitement des données du formulaire de réservation
+                $formData = $this->request->getPost();
+
+                // Insérer les données dans la table de réservation de matériel
+                $reservationData = [
+                    'dateDebut' => $formData['start_date'],
+                    'dateFin' => $formData['end_date'],
+                    'materiel_id' => $id,
+                    'user_id' => session()->get('user')['id'] // Ou toute autre méthode pour récupérer l'ID de l'utilisateur connecté
+                ];
+
+                $this->reservationMaterielModel->insert($reservationData);
+
+                // Mettre à jour la colonne reserver du matériel à true
+                $this->materielModel->update($id, ['reserver' => 1]);
+
+                // Rediriger l'utilisateur vers une page de confirmation
+                return redirect()->to('/materiel');
+            } else {
+                // Afficher le formulaire de réservation
+                $data['materiel'] = $materiel;
+                return $this->header . $this->navbar . view('pages/materiel/form', $data) . $this->footer;
+            }
+        }  else if (!$materiel) {
+            // Définir un message d'erreur
+            $data['message'] = "Le matériel demandé n'a pas été trouvé.";
+            // Charger la vue d'erreur 404
+            return view('errors/html/error_404', $data);
+        }
+    }
  }
