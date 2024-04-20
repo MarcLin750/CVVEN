@@ -43,8 +43,14 @@ $routes->group('users', ['filter' => 'authFilter'],function(RouteCollection $rou
 });
 
 $routes->group('admin', ['filter' => 'authFilter'], function(RouteCollection $routes) {
-    $routes->get('dashboard', 'Admin::index');
+    $routes->get('dashboard', 'Admin::dashboard');
     $routes->get('reservations/confirm/(:num)', 'Admin::confirmReservation/$1');
     $routes->get('reservations/cancel/(:num)', 'Admin::cancelReservation/$1');
     $routes->get('users', 'Admin::showUsers');
+    $routes->match(['get', 'post'], 'login', 'Admin::login');
+    $routes->match(['get', 'post'], 'register', 'Admin::register');
+    $routes->post('register_validation', 'Admin::register_validation');
+    $routes->post('login_validation', 'Admin::login_validation');
 });
+
+$routes->get('profile/index', 'ProfileController::index');

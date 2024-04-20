@@ -42,6 +42,11 @@
                             Déconnexion
                         </button>
                     </a>
+                    <a href="<?= site_url('profile/index'); ?>">
+                        <button type="button" class="btn btn-danger shadow-none">
+                            Profil
+                        </button>
+                    </a>
                 <?php else: ?>
                     <a href="/auth/login">
                         <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2">

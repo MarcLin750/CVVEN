@@ -7,6 +7,11 @@ use CodeIgniter\Model;
 class ReservationModel extends Model
 {
     protected $table = 'reservation';
-    protected $primaryKey = 'id'; 
-    protected $allowedFields = ['dateDebut', 'dateFin', 'nbrPersonne', 'prix', 'userId']; 
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['userId', 'dateDebut', 'dateFin', 'nbrPersonne', 'prix'];
+
+    public function getReservationsByUserId($userId)
+    {
+        return $this->where('userId', $userId)->findAll();
+    }
 }
