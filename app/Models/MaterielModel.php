@@ -9,12 +9,13 @@ class MaterielModel extends Model
     protected $table            = 'materiel';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'object';
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
         'categorie',
-        'details'
+        'details',
+        'reserver'
     ];
 
     protected bool $allowEmptyInserts = false;
