@@ -1,4 +1,18 @@
+
+
 <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Materiel <?php echo $materiel['categorie']; ?></h1>
+                    <hr>
+                    <p class="card-text">
+                        <?php echo $materiel['details']; ?>
+                    </p>
+                </div>
+            </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <div class="card shadow-lg mb-5 bg-white rounded">
