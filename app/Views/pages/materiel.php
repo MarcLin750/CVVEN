@@ -52,9 +52,33 @@
         <div class="col mb-4">
             <a href="/materiel/type5" style="text-decoration:none; color: black;">
                 <div class="card card-height">
+                    <img src="../images/image5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Photocopieur</h5>
+                        <p class="card-text"></p>
+                        <p></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col mb-4">
+            <a href="/materiel/type6" style="text-decoration:none; color: black;">
+                <div class="card card-height">
                     <img src="../images/image6.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Accessoires</h5>
+                        <p class="card-text"></p>
+                        <p></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col mb-4">
+            <a href="/materiel/type7" style="text-decoration:none; color: black;">
+                <div class="card card-height">
+                    <img src="../images/image7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Transmission</h5>
                         <p class="card-text"></p>
                         <p></p>
                     </div>
