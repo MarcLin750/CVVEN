@@ -7,7 +7,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class Users extends BaseController
 {
-    public function logout(): string
+    public function profil(): string
     {
         // Charger la vue du header
         $header = view('template/header');

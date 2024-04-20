@@ -37,7 +37,7 @@
                     <?php if ($isAdmin): ?>
                         <a href="<?= site_url('admin/dashboard'); ?>" class="btn btn-secondary btn-info me-2">Admin Panel</a>
                     <?php endif; ?>
-                    <a href="<?= site_url('profile/index'); ?>">
+                    <a href="/users/<?= $userSession['id'] ?>">
                         <button type="button" class="btn btn-success shadow-none me-2">
                             Profil
                         </button>

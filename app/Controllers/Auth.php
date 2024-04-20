@@ -42,7 +42,7 @@ class Auth extends BaseController
                 'isLoggedIn' => true
             ];
 
-            if ($user->mail === 'admin77420@gmail.com') {
+            if ($user->mail === 'admin@gmail.com') {
                 $sessionData['isAdmin'] = true;
             }
 

@@ -1,51 +1,62 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\UsersModel;
-use App\Models\ReservationModel;
-use App\Models\LogementModel;
-
-
 
 use CodeIgniter\Controller;
 
+use App\Models\Users;
+use App\Models\LogementModel;
+use App\Models\ReservationModel;
+
 class Admin extends BaseController
 {
+    protected $header;
+    protected $navbar;
+    protected $footer;
+
     protected $adminModel;
     protected $session;
     protected $validation;
+
+    protected $users;
+    protected $logementModel;
+    protected $reservationModel;
+
     public function __construct()
     {
-        $this->reservationModel = new ReservationModel();
-    }
-    public function index()
-    {
-        $reservationModel = new \App\Models\ReservationModel();
-        $data['reservations'] = $reservationModel->getReservationsWithDetails();
-        
-        return view('admin/dashboard', $data);
-    }
+        // Déclarer le header, la navbar et le footer
+        $this->header = view('template/header');
+        $this->navbar = view('components/navbar');
+        $this->footer = view('template/footer');
 
-    public function initController($request, $response, $logger)
-    {
-        parent::initController($request, $response, $logger);
-
-        // Load the Admin model correctly using the model's correct namespace and name
+        // Initialiser les modèles, la session et la validation
         $this->adminModel = new \App\Models\Admin_Model();
-
-        // Load the session and validation library
         $this->session = \Config\Services::session();
         $this->validation = \Config\Services::validation();
+
+        // Charger les modèles
+        $this->users = new Users();
+        $this->logementModel = new LogementModel();
+        $this->reservationModel = new ReservationModel();
+    }
+
+    public function index()
+    {
+        $data['reservations'] = $this->reservationModel->getReservationsWithDetails();
+        
+        return $this->header . $this->navbar . view('admin/dashboard', $data) . $this->footer;
     }
 
     public function login()
     {
-        return view('admin/login');
+        
+        return $this->header . $this->navbar . view('admin/login') . $this->footer;
     }
 
     public function register()
     {
-        return view('admin/register');
+        
+        return $this->header . $this->navbar . view('admin/register') . $this->footer;
     }
 
     public function dashboard()
@@ -53,17 +64,20 @@ class Admin extends BaseController
         if (!$this->session->get('logged_in')) {
             return redirect()->to('/admin/login');
         }
-        return view('admin/dashboard');
+
+        $data['reservations'] = $this->reservationModel->findAll();
+
+        // Utiliser le header, la navbar et le footer dans la méthode dashboard
+        return $this->header . $this->navbar . view('admin/dashboard', $data) . $this->footer;
     }
 
     public function login_validation()
     {
-        // Change 'email' to 'mail' to match the form and database schema
-        $email = $this->request->getPost('mail');
+        $mail = $this->request->getPost('mail');
         $password = $this->request->getPost('password');
-        if ($this->adminModel->can_login($email, $password)) {
+        if ($this->adminModel->can_login($mail, $password)) {
             $session_data = [
-                'mail' => $email, // Change session key to 'mail' if necessary
+                'mail' => $mail,
                 'logged_in' => TRUE
             ];
             $this->session->set($session_data);
@@ -75,60 +89,50 @@ class Admin extends BaseController
     }
 
     public function register_validation()
-{
-    log_message('debug', 'Register validation method called.');  // Logging for debugging
+    {
+        $this->validation->setRules([
+            'nom' => 'required',
+            'prenom' => 'required',
+            'mail' => 'required|valid_email|is_unique[admin.mail]',
+            'password' => 'required',
+        ]);
 
-    $this->validation->setRules([
-        'nom' => 'required',
-        'prenom' => 'required',
-        'mail' => 'required|valid_email|is_unique[admin.mail]',
-        'password' => 'required',
-    ]);
+        if ($this->validation->withRequest($this->request)->run()) {
+            $data = [
+                'nom' => $this->request->getPost('nom'),
+                'prenom' => $this->request->getPost('prenom'),
+                'mail' => $this->request->getPost('mail'),
+                'mdp' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            ];
 
-    if ($this->validation->withRequest($this->request)->run()) {
-        $data = [
-            'nom' => $this->request->getPost('nom'),
-            'prenom' => $this->request->getPost('prenom'),
-            'mail' => $this->request->getPost('mail'),
-            'mdp' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-        ];
-
-        log_message('debug', 'Form data validated and ready for insertion: ' . print_r($data, true));  // Check the prepared data
-
-        if ($this->adminModel->register_admin($data)) {
-            log_message('debug', 'Data inserted successfully.');
-            return redirect()->to('/admin/login');
+            if ($this->adminModel->register_admin($data)) {
+                return redirect()->to('/admin/login');
+            } else {
+                return redirect()->back()->withInput()->with('error', 'Registration failed!');
+            }
         } else {
-            log_message('error', 'Failed to insert data.');
-            return redirect()->back()->withInput()->with('error', 'Registration failed!');
+            $errors = $this->validation->getErrors();
+            return redirect()->back()->withInput()->with('errors', $errors);
         }
-    } else {
-        $errors = $this->validation->getErrors();
-        log_message('error', 'Validation failed: ' . print_r($errors, true));
-        return redirect()->back()->withInput()->with('errors', $errors);
     }
-}
+
     public function showUsers()
     {
-        $model = new UsersModel();
-        $data['users'] = $model->findAll();
-        return view('admin/users', $data);
+        $data['users'] = $this->users->findAll();
+        // Utiliser le header, la navbar et le footer dans la méthode showUsers
+        return $this->header . $this->navbar . view('admin/users', $data) . $this->footer;
     }
 
     public function confirmReservation($id)
     {
-        $model = new ReservationModel();
-        $model->update($id, ['status' => 'confirmed']);
+        $this->reservationModel->update($id, ['status' => 'confirmed']);
         return redirect()->to('/admin/dashboard');
     }
 
     public function cancelReservation($id)
     {
-        $model = new ReservationModel();
-        // Supprime la réservation avec l'ID donné
-        $model->delete($id);
-       
+        // $this->reservationModel->delete($id);
+        $this->logementModel->update($id, ['reserver' => 0]);
         return redirect()->to('/admin/dashboard');
     }
-
 }

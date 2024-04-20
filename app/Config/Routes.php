@@ -39,13 +39,13 @@ $routes->group('auth',  function(RouteCollection $routes){
 });
 
 $routes->group('users', ['filter' => 'authFilter'],function(RouteCollection $routes){
-    $routes->get('profil','Users::logout');
+    $routes->get('(:num)','Users::profil/$1');
 });
 
 $routes->group('admin', ['filter' => 'authFilter'], function(RouteCollection $routes) {
     $routes->get('dashboard', 'Admin::dashboard');
     $routes->get('reservations/confirm/(:num)', 'Admin::confirmReservation/$1');
-    $routes->get('reservations/cancel/(:num)', 'Admin::cancelReservation/$1');
+    $routes->get('reservations/cancel/(:segment)', 'Admin::cancelReservation/$1');
     $routes->get('users', 'Admin::showUsers');
     $routes->match(['get', 'post'], 'login', 'Admin::login');
     $routes->match(['get', 'post'], 'register', 'Admin::register');
