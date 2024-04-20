@@ -27,6 +27,9 @@ $routes->group('materiel', function(RouteCollection $routes){
     $routes->get('type5','materiel::type5');
     $routes->get('type6','materiel::type6');
     $routes->get('type7','materiel::type7');
+    $routes->match(['get', 'post'], '(:segment)', 'materiel::reserveMateriel/$1');
+    $routes->post('reserve/(:segment)', 'materiel::reserveMateriel/$1');
+
 });
 
 $routes->group('auth',  function(RouteCollection $routes){
