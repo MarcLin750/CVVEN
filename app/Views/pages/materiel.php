@@ -1,6 +1,6 @@
 <div class="container" style='padding-top: 6vh;'>
     <h1 class="text-center" style='padding-bottom: 6vh;'>Matériels :</h1>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
         <div class="col mb-4">
             <a href="/materiel/type1" style="text-decoration:none; color: black;">
                 <div class="card card-height">

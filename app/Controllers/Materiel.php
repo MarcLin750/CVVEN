@@ -51,9 +51,17 @@ class Materiel extends BaseController
         $data['materiels']['video'] = $materiel4;
         $data['nbr_materiel_type4'] = count($materiel4);
 
-        $materiel5 = $this->materielModel->where('categorie', 'accessoire')->where('reserver', 0)->findAll();
-        $data['materiels']['accessoire'] = $materiel5;
+        $materiel5 = $this->materielModel->where('categorie', 'photocopieur')->where('reserver', 0)->findAll();
+        $data['materiels']['photocopieur'] = $materiel5;
         $data['nbr_materiel_type5'] = count($materiel5);
+
+        $materiel6 = $this->materielModel->where('categorie', 'accessoire')->where('reserver', 0)->findAll();
+        $data['materiels']['accessoire'] = $materiel6;
+        $data['nbr_materiel_type6'] = count($materiel6);
+
+        $materiel7 = $this->materielModel->where('categorie', 'transmission')->where('reserver', 0)->findAll();
+        $data['materiels']['transmission'] = $materiel7;
+        $data['nbr_materiel_type7'] = count($materiel7);
 
 
         $materiel = view('pages/materiel',$data);
@@ -98,14 +106,36 @@ class Materiel extends BaseController
 
     }
 
+
     public function type5() : string{
         
-        $materiel5 = $this->materielModel->where('categorie', 'accessoire')->where('reserver', 0)->findAll();
+        $materiel5 = $this->materielModel->where('categorie', 'photocopieur')->where('reserver', 0)->findAll();
         $data['materiels'] = $materiel5;
         $data['nbr_materiel_type5'] = count($materiel5);
 
         $type5 = view('pages/materiel/type5', $data);
         return $this->header . $this->navbar . $type5 . $this->footer;
 
+    }
+
+    public function type6() : string{
+        
+        $materiel6 = $this->materielModel->where('categorie', 'accessoire')->where('reserver', 0)->findAll();
+        $data['materiels'] = $materiel6;
+        $data['nbr_materiel_type6'] = count($materiel6);
+
+        $type6 = view('pages/materiel/type6', $data);
+        return $this->header . $this->navbar . $type6 . $this->footer;
+
+    }
+
+    public function type7() : string{
+        $materiel7 = $this->materielModel->where('categorie', 'transmission')->where('reserver', 0)->findAll();
+        $data['materiels'] = $materiel7;
+        $data['nbr_materiel_type7'] = count($materiel7);
+
+        
+        $type7 = view('pages/materiel/type7', $data);
+        return $this->header . $this->navbar . $type7 . $this->footer;
     }
  }

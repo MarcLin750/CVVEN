@@ -6,8 +6,8 @@ if ($isLoggedIn): ?>
     <div class="container" style='margin-top: 28px;'>
         <div class="card">
             <div class="card-header">
-                <h1>Photocopieur</h1>
-                <p>Nombre de matériels disponible: <?= $nbr_materiel_type5 ?>/1.</p>
+                <h1>Accessoire</h1>
+                <p>Nombre de matériels disponible: <?= $nbr_materiel_type6 ?>/2.</p>
             </div>
             <div class="card-body">
                 <div class="list-group list-group-flush" style="max-height: 400px; overflow-y: auto;">
