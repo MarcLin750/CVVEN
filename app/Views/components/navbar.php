@@ -35,8 +35,13 @@
                         Bonjour, <?= $userSession['prenom'] ?>
                     </span>
                     <?php if ($isAdmin): ?>
-                        <a href="<?= site_url('admin/dashboard'); ?>" class="btn btn-info me-2">Admin Panel</a>
+                        <a href="<?= site_url('admin/dashboard'); ?>" class="btn btn-secondary btn-info me-2">Admin Panel</a>
                     <?php endif; ?>
+                    <a href="<?= site_url('profile/index'); ?>">
+                        <button type="button" class="btn btn-success shadow-none me-2">
+                            Profil
+                        </button>
+                    </a>
                     <a href="/auth/logout">
                         <button type="button" class="btn btn-danger shadow-none">
                             Déconnexion

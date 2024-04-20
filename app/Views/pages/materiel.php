@@ -16,7 +16,7 @@
         <div class="col mb-4">
             <a href="/materiel/type2" style="text-decoration:none; color: black;">
                 <div class="card card-height">
-                    <img src="../images/image2.jpg" class="card-img-top"  alt="...">
+                    <img src="../images/image2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Imprimante</h5>
                         <p class="card-text"></p>
