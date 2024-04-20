@@ -21,6 +21,10 @@ $routes->group('logement', function(RouteCollection $routes){
 $routes->group('materiel', function(RouteCollection $routes){
     $routes->get('/','materiel::view');
     $routes->get('type1','materiel::type1');
+    $routes->get('type2','materiel::type2');
+    $routes->get('type3','materiel::type3');
+    $routes->get('type4','materiel::type4');
+    $routes->get('type5','materiel::type5');
 });
 
 $routes->group('auth',  function(RouteCollection $routes){
