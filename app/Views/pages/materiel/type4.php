@@ -12,7 +12,7 @@ if ($isLoggedIn): ?>
             <div class="card-body">
                 <div class="list-group list-group-flush" style="max-height: 400px; overflow-y: auto;">
                     <?php foreach ($materiels as $materiel) : ?>
-                        <a href="<?= $materiel['categorie'] ?>" class="list-group-item list-group-item-action">
+                        <a href="<?= $materiel['id'] ?>" class="list-group-item list-group-item-action">
                             <p class="mb-1"><?= $materiel['details'] ?></p>
                         </a>
                     <?php endforeach; ?>
