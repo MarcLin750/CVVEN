@@ -498,3 +498,8 @@ in APPPATH\Views\pages\materiel\type7.php on line 15.
 INFO - 2024-04-20 13:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-20 13:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 >>>>>>> e4eb582cd900aecd9ffd08c244e9114b1f9581c5
+INFO - 2024-04-20 13:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 13:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 13:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 13:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 15:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
