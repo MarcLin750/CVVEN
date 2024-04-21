@@ -1,42 +1,45 @@
-<style>
-    label, input {
-        display: block;
-        margin: 5px 0;
-    }
-    input[type="text"], input[type="password"] {
-        width: 200px;
-        padding: 5px;
-    }
-    input[type="submit"] {
-        padding: 5px 15px;
-        cursor: pointer;
-    }
-    .message {
-        color: green;
-    }
-    .error {
-        color: red;
-    }
-</style>
-<h1>Register Admin</h1>
-<?php if (session()->getFlashdata('error')): ?>
-    <div class="error">
-        <?= session()->getFlashdata('error'); ?>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="card mx-auto" style="width: 80vw;">
+                <h2 class="card-header text-center">Inscription</h2>
+                <div class="card-body">
+                    <form method="POST">
+                        <?php $errors = session()->getFlashdata('errors');?>
+                        <?php if($errors) :?>
+                            <div class="alert alert-danger" role="alert">
+                                <ul>
+                                    <?php foreach ($errors as $error) : ?>
+                                        <li><?= esc($error) ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom :</label>
+                            <input type="text" class="form-control" id="nom" name="nom" value="<?= old('nom') ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="prenom" class="form-label">Prénom :</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom" value="<?= old('prenom') ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Adresse mail :</label>
+                            <input type="email" class="form-control" id="mail" name="mail" value="<?= old('mail') ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mdp" class="form-label">Mot de passe :</label>
+                            <input type="password" class="form-control" id="mdp" name="mdp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mdpConfirmed" class="form-label">Confirmer le mot de passe :</label>
+                            <input type="password" class="form-control" id="mdpConfirmed" name="mdpConfirmed">
+                        </div>
+                        <p class="text-center">Vous avez déjà un compte ? <a href="<?= base_url('auth/login') ?>">Se connecter</a></p>
+                        <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-<?php endif; ?>
-<?php if (session()->getFlashdata('success')): ?>
-    <div class="message">
-        <?= session()->getFlashdata('success'); ?>
-    </div>
-<?php endif; ?>
-<form method="post" action="<?= base_url('admin/register_validation'); ?>">
-    <label for="nom">Nom:</label>
-    <input type="text" id="nom" name="nom" required>
-    <label for="prenom">Prénom:</label>
-    <input type="text" id="prenom" name="prenom" required>
-    <label for="mail">Email:</label>
-    <input type="text" id="mail" name="mail" required> <!-- Updated to "mail" to match your database column -->
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <input type="submit" value="Register">
-</form>
+</div>
