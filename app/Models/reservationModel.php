@@ -8,7 +8,7 @@ class ReservationModel extends Model
 {
     protected $table = 'reservation';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['userId', 'logementId', 'dateDebut', 'dateFin', 'nbrPersonne', 'prix'];
+    protected $allowedFields = ['dateDebut', 'dateFin', 'nbrPersonne', 'prix', 'userId', 'logementId', 'status'];
 
     public function getReservationsByUserId($userId)
     {

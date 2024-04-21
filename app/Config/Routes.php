@@ -18,6 +18,8 @@ $routes->group('logement', function(RouteCollection $routes){
     $routes->match(['get', 'post'], '(:segment)', 'logement::getLogement/$1');
 });
 
+$routes->get('success', 'logement::success');
+
 $routes->group('materiel', function(RouteCollection $routes){
     $routes->get('/','materiel::view');
     $routes->get('type1','materiel::type1');
@@ -40,17 +42,16 @@ $routes->group('auth',  function(RouteCollection $routes){
 
 $routes->group('users', ['filter' => 'authFilter'],function(RouteCollection $routes){
     $routes->get('(:num)','Users::profil/$1');
+    $routes->get('(:num)/cancel/(:segment)/(:segment)','Users::cancelReservation/$1/$2/$3');
 });
 
 $routes->group('admin', ['filter' => 'authFilter'], function(RouteCollection $routes) {
     $routes->get('dashboard', 'Admin::dashboard');
-    $routes->get('reservations/confirm/(:num)', 'Admin::confirmReservation/$1');
-    $routes->get('reservations/cancel/(:segment)', 'Admin::cancelReservation/$1');
+    $routes->get('reservations/confirm/(:segment)/(:segment)', 'Admin::confirmReservation/$1/$2');
+    $routes->get('reservations/cancel/(:segment)/(:segment)', 'Admin::cancelReservation/$1/$2');
     $routes->get('users', 'Admin::showUsers');
     $routes->match(['get', 'post'], 'login', 'Admin::login');
     $routes->match(['get', 'post'], 'register', 'Admin::register');
     $routes->post('register_validation', 'Admin::register_validation');
     $routes->post('login_validation', 'Admin::login_validation');
 });
-
-$routes->get('profile/index', 'ProfileController::index');

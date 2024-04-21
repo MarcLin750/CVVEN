@@ -146,7 +146,8 @@ class Logement extends BaseController
                     'nbrPersonne' => $formData['nbr_personne'],
                     'prix' => $totalPrice,
                     'userId' => $userSession['id'],
-                    'logementId' => $logement['id']
+                    'logementId' => $logement['id'],
+                    'status' => 'confirmed'
                 ];
                 
                 // Insérer les données de réservation dans la base de données
@@ -165,7 +166,7 @@ class Logement extends BaseController
                 $this->logementModel->update($id, ['reserver' => 1]);
 
                 // Rediriger l'utilisateur vers une page de confirmation
-                return redirect()->to('/logement');
+                return redirect()->to('/success');
             } else {
                 // Passer les données du logement à la vue
                 $data['logement'] = $logement;
@@ -177,5 +178,11 @@ class Logement extends BaseController
             // Rediriger vers la page d'erreur 404
             return $this->header . $this->navbar . view('errors/html/error_404') . $this->footer;
         }
+    }
+    
+    public function success(): string
+    {
+        $success = view('pages/logement/success');
+        return $this->header . $this->navbar . $success . $this->footer;
     }
 }

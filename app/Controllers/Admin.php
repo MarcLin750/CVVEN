@@ -49,13 +49,11 @@ class Admin extends BaseController
 
     public function login()
     {
-        
         return $this->header . $this->navbar . view('admin/login') . $this->footer;
     }
 
     public function register()
     {
-        
         return $this->header . $this->navbar . view('admin/register') . $this->footer;
     }
 
@@ -65,7 +63,24 @@ class Admin extends BaseController
             return redirect()->to('/admin/login');
         }
 
-        $data['reservations'] = $this->reservationModel->findAll();
+        $data['reservations'] = $this->reservationModel->where('status', 'confirmed')->findAll();
+        $data['users'] = [];
+        foreach ($data['reservations'] as $reservation) {
+            // Récupérez l'utilisateur correspondant à l'ID de l'utilisateur de la réservation
+            $user = $this->users->find($reservation['userId']);
+            
+            // Ajoutez l'utilisateur au tableau des utilisateurs associés à chaque réservation
+            $data['users'][$reservation['id']] = $user;
+        }
+        $data['reservationsCancel'] = $this->reservationModel->where('status', 'cancel')->findAll();
+        $data['users'] = [];
+        foreach ($data['reservationsCancel'] as $reservation) {
+            // Récupérez l'utilisateur correspondant à l'ID de l'utilisateur de la réservation
+            $user = $this->users->find($reservation['userId']);
+            
+            // Ajoutez l'utilisateur au tableau des utilisateurs associés à chaque réservation
+            $data['users'][$reservation['id']] = $user;
+        }
 
         // Utiliser le header, la navbar et le footer dans la méthode dashboard
         return $this->header . $this->navbar . view('admin/dashboard', $data) . $this->footer;
@@ -123,16 +138,18 @@ class Admin extends BaseController
         return $this->header . $this->navbar . view('admin/users', $data) . $this->footer;
     }
 
-    public function confirmReservation($id)
+    public function confirmReservation($reservationId, $logementId)
     {
-        $this->reservationModel->update($id, ['status' => 'confirmed']);
+        $this->reservationModel->update($reservationId, ['status' => 'confirmed']);
+        $this->logementModel->update($logementId, ['reserver' => 1]);
         return redirect()->to('/admin/dashboard');
     }
 
-    public function cancelReservation($id)
+    public function cancelReservation($reservationId, $logementId)
     {
         // $this->reservationModel->delete($id);
-        $this->logementModel->update($id, ['reserver' => 0]);
+        $this->reservationModel->update($reservationId, ['status' => 'cancel']);
+        $this->logementModel->update($logementId, ['reserver' => 0]);
         return redirect()->to('/admin/dashboard');
     }
 }
