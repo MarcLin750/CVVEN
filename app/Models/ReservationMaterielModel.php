@@ -16,7 +16,8 @@ class ReservationMaterielModel extends Model
         'dateDebut',
         'dateFin',
         'materiel_id',
-        'user_id'
+        'user_id',
+        'status'
     ];
 
     protected bool $allowEmptyInserts = false;

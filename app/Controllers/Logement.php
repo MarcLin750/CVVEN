@@ -28,7 +28,7 @@ class Logement extends BaseController
         $this->reservationLogementModel = new ReservationLogementModel();
     }
 
-    public function view(): string
+    public function index(): string
     {
         // Charger la vue de la page logements et passer les données
         $data['logements'] = [];
@@ -178,11 +178,5 @@ class Logement extends BaseController
             // Rediriger vers la page d'erreur 404
             return $this->header . $this->navbar . view('errors/html/error_404') . $this->footer;
         }
-    }
-    
-    public function success(): string
-    {
-        $success = view('pages/logement/success');
-        return $this->header . $this->navbar . $success . $this->footer;
     }
 }

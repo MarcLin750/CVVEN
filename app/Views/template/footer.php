@@ -21,8 +21,11 @@
             </div>
             <div class="col-lg-4 p-4">
                 <h5 class="mb-3">Links</h5>
-                <a href="#"class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
-                <a href="#"class="d-inline-block mb-2 text-dark text-decoration-none">Rooms</a><br>
+                <a href="/#Top" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
+                <a href="/logement/" class="d-inline-block mb-2 text-dark text-decoration-none">Logement</a><br>
+                <a href="/materiel/" class="d-inline-block mb-2 text-dark text-decoration-none">Materiel</a><br>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Salle de colloque</a><br>
+                <a href="/Contact/" class="d-inline-block mb-2 text-dark text-decoration-none">Contact</a><br>
             </div>
             <div class="col-lg-4 p-4">
                 <h5 class="mb-3"> Follow us</h5>

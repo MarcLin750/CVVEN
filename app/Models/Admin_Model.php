@@ -7,9 +7,10 @@ use CodeIgniter\Model;
 
 class Admin_Model extends Model
 {
-    protected $table = 'admin';
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['nom', 'prenom', 'mail', 'mdp'];
+    protected $table            = 'admin';
+    protected $primaryKey       = 'id';
+    protected $returnType       = 'object';
+    protected $allowedFields    = ['nom', 'prenom', 'mail', 'mdp'];
 
     /**
      * Check login credentials for an admin.

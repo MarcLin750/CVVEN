@@ -19,10 +19,7 @@
                     <a class="nav-link me-2" href="#">Salle de colloque</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-2" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link me-2" href="#">À propos</a>
+                    <a class="nav-link me-2" href="/contact/">Contact</a>
                 </li>
             </ul>
             <div class="d-flex">
@@ -50,12 +47,12 @@
                 <?php else: ?>
                     <a href="/auth/login">
                         <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2">
-                            Login
+                            Connexion
                         </button>
                     </a>
                     <a href="/auth/register">
                         <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2">
-                            Register
+                            S'incrire
                         </button>
                     </a>
                 <?php endif; ?>

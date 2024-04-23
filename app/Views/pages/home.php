@@ -61,7 +61,7 @@
     </div>
 </div>
 
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Avis</h2>
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
@@ -168,7 +168,7 @@
     </button>
 </div>
 
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">REACH US</h2>
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Où sommes-nous ?</h2>
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-8 p-4 mb-lg-0 mb-3 bg-white rounded">
@@ -176,14 +176,14 @@
         </div>
         <div class="col-lg-4 col-md-8">
             <div class="bg-white p-4 rounded mb-4">
-                <h5>Call us</h5>
-                <a href="tel: 07 68 17 98 82" class="d-inline-block mb-2 text-decoration-none text-dark">
+                <h5>Appelez-nous</h5>
+                <a href="tel: ## ## ## ## ##" class="d-inline-block mb-2 text-decoration-none text-dark">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                 </svg>
-                    +33 7 68 17 98 82
+                    +33 ## ## ## ## ## 
                 </a>
-                <h5>Follow Us</h5>
+                <h5>Suivez-nous</h5>
                 <a href="#" class="d-inline-block mb-3  ">
                     <span class="badge bg-light text-dark fs-6 p-2 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">

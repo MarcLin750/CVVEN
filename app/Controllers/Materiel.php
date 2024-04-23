@@ -25,28 +25,24 @@ class Materiel extends BaseController
         $this->materielModel = new MaterielModel();
         $this->reservationMaterielModel = new ReservationMaterielModel();
     }
-    public function view()
+    public function index()
     {
 
         $data['materiels'] = [];
         $data['nbr_materiel_type1'] = 0;
         
-
         $materiel1 = $this->materielModel->where('categorie', 'informatique')->where('reserver', 0)->findAll();
         $data['materiels']['categorie'] = $materiel1;
         $data['nbr_materiel_type1'] = count($materiel1);
 
-        
         $materiel2 = $this->materielModel->where('categorie', 'imprimante')->where('reserver', 0)->findAll();
         $data['materiels']['imprimante'] = $materiel2;
         $data['nbr_materiel_type2'] = count($materiel2);
 
-        
         $materiel3 = $this->materielModel->where('categorie', 'internet')->where('reserver', 0)->findAll();
         $data['materiels']['internet'] = $materiel3;
         $data['nbr_materiel_type3'] = count($materiel3);
 
-        
         $materiel4 = $this->materielModel->where('categorie', 'video')->where('reserver', 0)->findAll();
         $data['materiels']['video'] = $materiel4;
         $data['nbr_materiel_type4'] = count($materiel4);
@@ -62,7 +58,6 @@ class Materiel extends BaseController
         $materiel7 = $this->materielModel->where('categorie', 'transmission')->where('reserver', 0)->findAll();
         $data['materiels']['transmission'] = $materiel7;
         $data['nbr_materiel_type7'] = count($materiel7);
-
 
         $materiel = view('pages/materiel',$data);
         return $this->header . $this->navbar . $materiel . $this->footer;
@@ -82,7 +77,6 @@ class Materiel extends BaseController
         $data['materiels'] = $materiel2;
         $data['nbr_materiel_type2'] = count($materiel2);
 
-    
         $type2 = view('pages/materiel/type2', $data);
         return $this->header . $this->navbar . $type2 . $this->footer;
     }
@@ -106,16 +100,13 @@ class Materiel extends BaseController
 
     }
 
-
     public function type5() : string{
-        
         $materiel5 = $this->materielModel->where('categorie', 'photocopieur')->where('reserver', 0)->findAll();
         $data['materiels'] = $materiel5;
         $data['nbr_materiel_type5'] = count($materiel5);
 
         $type5 = view('pages/materiel/type5', $data);
         return $this->header . $this->navbar . $type5 . $this->footer;
-
     }
 
     public function type6() : string{
@@ -155,7 +146,8 @@ class Materiel extends BaseController
                     'dateDebut' => $formData['start_date'],
                     'dateFin' => $formData['end_date'],
                     'materiel_id' => $id,
-                    'user_id' => session()->get('user')['id'] // Ou toute autre méthode pour récupérer l'ID de l'utilisateur connecté
+                    'user_id' => session()->get('user')['id'], // Ou toute autre méthode pour récupérer l'ID de l'utilisateur connecté
+                    'status' => 'confirmed'
                 ];
 
                 $this->reservationMaterielModel->insert($reservationData);
@@ -164,7 +156,7 @@ class Materiel extends BaseController
                 $this->materielModel->update($id, ['reserver' => 1]);
 
                 // Redirige l'utilisateur vers une page de confirmation
-                return redirect()->to('/materiel');
+                return redirect()->to('/success');
             } else {
                 // Affiche le formulaire de réservation
                 $data['materiel'] = $materiel;
