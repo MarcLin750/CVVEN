@@ -28,11 +28,11 @@ if ($isLoggedIn): ?>
                                         <form method="POST" action="/materiel/reserve/<?php echo $materiel['id']; ?>">
                                             <div class="mb-3">
                                                 <label for="start_date" class="form-label">Date de début:</label>
-                                                <input type="date" class="form-control" id="start_date" name="start_date" value="<?php echo date('Y-m-d'); ?>" required>
+                                                <input type="date" class="form-control" id="start_date" name="start_date" value="<?php echo date('Y-m-d'); ?>" min="<?php echo date('Y-m-d'); ?>" required>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="end_date" class="form-label">Date de fin:</label>
-                                                <input type="date" class="form-control" id="end_date" name="end_date" value="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
+                                                <input type="date" class="form-control" id="end_date" name="end_date" value="<?php echo date('Y-m-d', strtotime('+1 day')); ?>"  min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
                                             </div>
                                             <button type="submit" class="btn btn-primary">Réserver</button>
                                         </form>

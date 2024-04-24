@@ -38,10 +38,10 @@ class Users extends BaseController
         // Charger la vue du footer
         $footer = view('template/footer');
         
-        $data['reservations'] = $this->reservationModel->where('status', 'confirmed')->where('userId', $id)->findAll();
+        $data['reservations'] = $this->reservationModel->where('status !=', 'cancel')->where('userId', $id)->findAll();
 
         // récupération des données pour afficher les réservations de materiel.
-        $reservationMateriels = $this->reservationMaterielModel->where('status', 'confirmed')->where('user_id', $id)->findAll();
+        $reservationMateriels = $this->reservationMaterielModel->where('status !=', 'cancel')->where('user_id', $id)->findAll();
         $reservationsMaterielDetails = [];
         foreach ($reservationMateriels as $reservationMateriel) {
             $materielModel = $this->materielModel->find($reservationMateriel['materiel_id']);

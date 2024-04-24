@@ -147,7 +147,7 @@ class Materiel extends BaseController
                     'dateFin' => $formData['end_date'],
                     'materiel_id' => $id,
                     'user_id' => session()->get('user')['id'], // Ou toute autre méthode pour récupérer l'ID de l'utilisateur connecté
-                    'status' => 'confirmed'
+                    'status' => 'wait'
                 ];
 
                 $this->reservationMaterielModel->insert($reservationData);

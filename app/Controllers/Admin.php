@@ -71,7 +71,7 @@ class Admin extends BaseController
         // }
 
         // récupération des données pour afficher les réservations de logement.
-        $reservations = $this->reservationModel->where('status', 'confirmed')->findAll();
+        $reservations = $this->reservationModel->where('status !=', 'cancel')->findAll();
         $reservationsUsers = [];
         foreach ($reservations as $reservation) {
             // Récupérez l'utilisateur correspondant à l'ID de l'utilisateur de la réservation
@@ -82,7 +82,7 @@ class Admin extends BaseController
             $reservationsUsers[] = $reservation;
         }
         $data['reservations'] = $reservationsUsers;
-    
+        // récupération des données pour afficher les réservations de logement annuler.
         $reservationsCancel = $this->reservationModel->where('status', 'cancel')->findAll();
         $reservationsCancelUsers = [];
         foreach ($reservationsCancel as $reservation) {
@@ -96,7 +96,7 @@ class Admin extends BaseController
         $data['reservationsCancel'] = $reservationsCancelUsers;
     
         // récupération des données pour afficher les réservations de materiel.
-        $reservationMateriels = $this->reservationMaterielModel->where('status', 'confirmed')->findAll();
+        $reservationMateriels = $this->reservationMaterielModel->where('status !=', 'cancel')->findAll();
         $reservationsMaterielUsers = [];
         foreach ($reservationMateriels as $reservationMateriel) {
             // Récupérez l'utilisateur correspondant à l'ID de l'utilisateur de la réservation
@@ -109,7 +109,7 @@ class Admin extends BaseController
             $reservationsMaterielUsers[] = $reservationMateriel;
         }
         $data['reservationMateriels'] = $reservationsMaterielUsers;
-        
+        // récupération des données pour afficher les réservations de materiel annuler.
         $reservationMaterielCancels = $this->reservationMaterielModel->where('status', 'cancel')->findAll();
         $reservationMaterielCancelUsers = [];
         foreach ($reservationMaterielCancels as $reservationMateriel) {
@@ -187,9 +187,20 @@ class Admin extends BaseController
         return redirect()->to('/admin/users');
     }
 
-    public function confirmReservation($reservationId, $logementId)
+    // Fonction pour la réservation logement
+    public function validateReservation($reservationId)
     {
-        $this->reservationModel->update($reservationId, ['status' => 'confirmed']);
+        $this->reservationModel->update($reservationId, ['status' => 'validate']);
+        return redirect()->to('/admin/dashboard');
+    }
+    public function refuseReservation($reservationId)
+    {
+        $this->reservationModel->update($reservationId, ['status' => 'refuse']);
+        return redirect()->to('/admin/dashboard');
+    }
+    public function goBackReservation($reservationId, $logementId)
+    {
+        $this->reservationModel->update($reservationId, ['status' => 'wait']);
         $this->logementModel->update($logementId, ['reserver' => 1]);
         return redirect()->to('/admin/dashboard');
     }
@@ -205,9 +216,20 @@ class Admin extends BaseController
         return redirect()->to('/admin/dashboard');
     }
 
-    public function confirmReservationMateriel($reservationId, $materielId)
+    // Fonction pour la réservation de materiel
+    public function validateReservationMateriel($reservationId)
     {
-        $this->reservationMaterielModel->update($reservationId, ['status' => 'confirmed']);
+        $this->reservationMaterielModel->update($reservationId, ['status' => 'validate']);
+        return redirect()->to('/admin/dashboard');
+    }
+    public function refuseReservationMateriel($reservationId)
+    {
+        $this->reservationMaterielModel->update($reservationId, ['status' => 'refuse']);
+        return redirect()->to('/admin/dashboard');
+    }
+    public function goBackReservationMateriel($reservationId, $materielId)
+    {
+        $this->reservationMaterielModel->update($reservationId, ['status' => 'wait']);
         $this->materielModel->update($materielId, ['reserver' => 1]);
         return redirect()->to('/admin/dashboard');
     }

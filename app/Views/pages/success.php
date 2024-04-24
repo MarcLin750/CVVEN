@@ -7,7 +7,7 @@ if ($isLoggedIn):
         <div class="card shadow">
             <div class="card-body">
                 <h5 class="card-title text-center">Réservation Effectuée!</h5>
-                <p class="card-text text-center">Votre réservation a été effectuée avec succès.</p>
+                <p class="card-text text-center p-4">Votre réservation a été effectuée, veuiller attendre la confirmation de l'hôte.</p>
                 <div class="text-center">
                     <a href="/users/<?= $userSession['id'] ?>" class="btn btn-primary">Aller au Profil</a>
                 </div>

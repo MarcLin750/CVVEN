@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\LogementModel;
 use App\Models\ReservationModel;
-use App\Models\ReservationLogementModel;
 
 class Logement extends BaseController
 {
@@ -14,7 +13,6 @@ class Logement extends BaseController
 
     protected $logementModel;
     protected $reservationModel;
-    protected $reservationLogementModel;
 
     public function __construct()
     {
@@ -25,7 +23,6 @@ class Logement extends BaseController
         // Charger les modèles
         $this->logementModel = new LogementModel();
         $this->reservationModel = new ReservationModel();
-        $this->reservationLogementModel = new ReservationLogementModel();
     }
 
     public function index(): string
@@ -147,7 +144,7 @@ class Logement extends BaseController
                     'prix' => $totalPrice,
                     'userId' => $userSession['id'],
                     'logementId' => $logement['id'],
-                    'status' => 'confirmed'
+                    'status' => 'wait'
                 ];
                 
                 // Insérer les données de réservation dans la base de données

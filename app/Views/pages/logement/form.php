@@ -29,15 +29,15 @@ if ($isLoggedIn): ?>
                                         <form method="POST">
                                             <div class="input-group mb-3">
                                               <label class="input-group-text" for="start_date">Date de début:</label>
-                                              <input type="date" class="form-control" id="start_date" name="start_date" value="<?php echo date('Y-m-d'); ?>" required>
+                                              <input type="date" class="form-control" id="start_date" name="start_date" value="<?php echo date('Y-m-d'); ?>" min="<?php echo date('Y-m-d'); ?>" required>
                                             </div>
                                             <div class="input-group mb-3">
                                               <label class="input-group-text" for="end_date">Date de fin:</label>
-                                              <input type="date" class="form-control"  id="end_date" name="end_date" value="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
+                                              <input type="date" class="form-control"  id="end_date" name="end_date" value="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
                                             </div>
                                             <div class="input-group mb-3">
                                               <label class="input-group-text" for="nbr_personne">Nombre de personnes:</label>
-                                              <input type="number" class="form-control" id="nbr_personne" name="nbr_personne" min="1" max="<?php echo $logement["nbrLit"]; ?>" value="<?php echo $logement["nbrLit"]; ?>" required>
+                                              <input type="number" class="form-control" id="nbr_personne" name="nbr_personne" min="1" max="<?php echo $logement["nbrLit"]; ?>" value="<?php echo $logement["nbrLit"]; ?>" min="<?php echo date('Y-m-d'); ?>" required>
                                             </div>
                                             <button type="submit" class="btn btn-primary">Réserver</button>
                                         </form>

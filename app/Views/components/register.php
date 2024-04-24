@@ -1,4 +1,4 @@
-<div class="container d-flex justify-content-center align-items-center">
+<div class="container d-flex justify-content-center align-items-center mt-5 shadow">
     <div class="card mx-auto" style="width: 80vw;">
         <h2 class="card-header text-center">Inscription</h2>
         <div class="card-body">
