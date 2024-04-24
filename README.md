@@ -14,11 +14,30 @@ CVVEN est une application conçue pour faciliter la gestion et la réservation d
 - Autres technologies spécifiques au projet.
 
 ## Installation
-Instructions détaillées sur la manière de configurer et de lancer le projet localement.
+Suivez ces étapes pour configurer et lancer le projet CVVEN localement.
+
 \```bash
+# Cloner le dépôt
 git clone https://github.com/MarcLin750/CVVEN.git
+# Naviguer dans le répertoire du projet
 cd CVVEN
-# Instructions pour installer les dépendances et démarrer le serveur
+
+# Installer les dépendances (exemple avec npm, adaptez selon votre gestionnaire de paquets)
+npm install
+
+# Configurer la base de données
+# Créer une copie de votre fichier de configuration exemple pour l'environnement de développement
+cp .env.example .env
+# Ouvrir le fichier .env et mettre à jour les variables d'environnement pour la base de données
+
+# Exécuter les migrations pour créer les tables de la base de données (adaptez la commande à votre outil de migrations)
+php artisan migrate
+
+# (Optionnel) Exécuter les seeders pour remplir la base de données avec des données initiales
+php artisan db:seed
+
+# Lancer le serveur de développement local (exemple avec PHP, adaptez selon votre environnement)
+php -S localhost:8000
 \```
 
 ## Contributeurs
@@ -27,11 +46,5 @@ cd CVVEN
 - Loïc Mahadzere
 - Marc Lin
 
-## Licence
-Ce projet est sous licence MIT. Pour plus d'informations, voir le fichier [LICENSE](LICENSE).
-
-## Comment contribuer
-Informations sur la manière dont les développeurs peuvent contribuer au projet, y compris les directives de soumission de pull requests et d'autres politiques pertinentes.
-
 ## Contact
-Informations de contact pour le support ou d'autres questions relatives au projet.
+...
