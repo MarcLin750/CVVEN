@@ -9,13 +9,18 @@ Une plateforme intuitive pour la recherche, la réservation et la gestion d'héb
 - **Interface Utilisateur :** Profitez d'un design élégant et adaptatif pour une utilisation agréable sur tous les appareils.
 
 ## Technologies Utilisées
+- **HTML / CSS** pour le front.
 - **PHP** pour le backend.
 - **JavaScript** pour une interaction frontend dynamique.
-- *Ajouter d'autres technologies du projet.*
+- **SQL** pour stocker les données.
+
+## Framework Utilisées
+- **CodeIgniter 4** Framework MVC.
+- **Bootstrap 3.5** Framework front-end.
+
 
 ## Installation
 Configurez et démarrez CVVEN en local avec les étapes suivantes :
-
 
 - Cloner le dépôt
 git clone https://github.com/MarcLin750/CVVEN.git
