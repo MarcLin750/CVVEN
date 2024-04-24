@@ -16,7 +16,7 @@ Une plateforme intuitive pour la recherche, la réservation et la gestion d'héb
 ## Installation
 Configurez et démarrez CVVEN en local avec les étapes suivantes :
 
-`
+
 - Cloner le dépôt
 git clone https://github.com/MarcLin750/CVVEN.git
 
@@ -38,7 +38,7 @@ php artisan db:seed
 
 - Lancer le serveur local
 php -S localhost:8000
-`
+
 
 ## Contributeurs
 - Kevin Giang
