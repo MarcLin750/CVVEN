@@ -1,44 +1,44 @@
 # CVVEN
 
 ## Description du Projet
-CVVEN est une application conçue pour faciliter la gestion et la réservation d'hébergements. Elle permet aux utilisateurs de rechercher, réserver et gérer des logements facilement à travers une interface simple et intuitive.
+Une plateforme intuitive pour la recherche, la réservation et la gestion d'hébergements, offrant une expérience utilisateur fluide grâce à un design responsive et épuré.
 
 ## Fonctionnalités Principales
-- **Recherche de logements:** Permet aux utilisateurs de trouver des hébergements selon différents critères (localisation, prix, équipement, etc.).
-- **Gestion des réservations:** Interface pour gérer les réservations existantes, modifier les dates, ou annuler.
-- **Interface utilisateur:** Design épuré et responsive pour une expérience utilisateur optimale sur tous les appareils.
+- **Recherche de Logements :** Trouvez l'hébergement idéal en filtrant par localisation, prix, et équipement.
+- **Gestion des Réservations :** Modifiez et annulez facilement vos réservations via une interface dédiée.
+- **Interface Utilisateur :** Profitez d'un design élégant et adaptatif pour une utilisation agréable sur tous les appareils.
 
 ## Technologies Utilisées
-- PHP
-- JavaScript
-- Autres technologies spécifiques au projet.
+- **PHP** pour le backend.
+- **JavaScript** pour une interaction frontend dynamique.
+- *Ajouter d'autres technologies du projet.*
 
 ## Installation
-Suivez ces étapes pour configurer et lancer le projet CVVEN localement.
+Configurez et démarrez CVVEN en local avec les étapes suivantes :
 
-\```bash
-# Cloner le dépôt
+`
+- Cloner le dépôt
 git clone https://github.com/MarcLin750/CVVEN.git
-# Naviguer dans le répertoire du projet
+
+- Accéder au dossier du projet
 cd CVVEN
 
-# Installer les dépendances (exemple avec npm, adaptez selon votre gestionnaire de paquets)
+- Installer les dépendances nécessaires
 npm install
 
-# Configurer la base de données
-# Créer une copie de votre fichier de configuration exemple pour l'environnement de développement
+- Configurer la base de données
 cp .env.example .env
-# Ouvrir le fichier .env et mettre à jour les variables d'environnement pour la base de données
+- Éditez le fichier .env avec les détails de votre base de données
 
-# Exécuter les migrations pour créer les tables de la base de données (adaptez la commande à votre outil de migrations)
+- Créer la structure de la base de données
 php artisan migrate
 
-# (Optionnel) Exécuter les seeders pour remplir la base de données avec des données initiales
+- Peupler la base avec des données initiales
 php artisan db:seed
 
-# Lancer le serveur de développement local (exemple avec PHP, adaptez selon votre environnement)
+- Lancer le serveur local
 php -S localhost:8000
-\```
+`
 
 ## Contributeurs
 - Kevin Giang
