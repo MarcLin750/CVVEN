@@ -44,7 +44,6 @@ class Admin extends BaseController
         $this->reservationModel = new ReservationModel();
         $this->materielModel = new MaterielModel();
         $this->reservationMaterielModel = new ReservationMaterielModel();
-
     }
 
     public function index()

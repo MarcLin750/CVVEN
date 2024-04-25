@@ -7,12 +7,12 @@ if (isset($userSession)):
             <div class="col-md-4">
                 <div class="card shadow mb-4">
                     <div class="card-body">
-                        <h1 class="mb-4">Profil Utilisateur</h1>
-                        <h5 class="card-title">Informations de l'utilisateur</h5>
+                        <h1 class="mb-4">Mon profil</h1>
+                        <h5 class="card-title">Informations:</h5>
                         <p class="card-text">Nom: <?= $userSession['nom'] ?></p>
                         <p class="card-text">Prénom: <?= $userSession['prenom'] ?></p>
                         <p class="card-text">Email: <?= $userSession['mail'] ?></p>
-                        
+                        <a href="<?= site_url('users/' . $userSession['id'] . '/' . 'modify/')?>" class="btn btn-primary">Modifier</a>
                     </div>
                 </div>
             </div>

@@ -42,6 +42,8 @@ $routes->group('auth/',  function(RouteCollection $routes){
 
 $routes->group('users/', ['filter' => 'authFilter'],function(RouteCollection $routes){
     $routes->get('(:num)/','Users::profil/$1');
+    $routes->match(['get','post'],'(:num)/modify/','Users::profilModify/$1');
+    $routes->get('(:num)/modify/success/','Users::modifySuccess');
     $routes->get('(:num)/cancel/(:segment)/(:segment)/','Users::cancelReservation/$1/$2/$3');
     $routes->get('(:num)/materiel/cancel/(:segment)/(:segment)/','Users::cancelReservationMateriel/$1/$2/$3');
 });
