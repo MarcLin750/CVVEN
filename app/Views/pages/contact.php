@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="surname" class="form-label">Surnom</label>
+                    <label for="surname" class="form-label">Prénom</label>
                     <input type="text" class="form-control" id="surname" name="surname" required>
                     <div class="invalid-feedback">
                         Please provide a valid surname.
