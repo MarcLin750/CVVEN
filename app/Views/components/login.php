@@ -1,5 +1,5 @@
-<div class="container d-flex justify-content-center align-items-center my-5 shadow">
-    <div class="card mx-auto" style="width: 80vw;">
+<div class="container d-flex justify-content-center align-items-center my-5">
+    <div class="card shadow" style="width: 80vw;">
         <h2 class="card-header text-center">Connexion</h2>
         <div class="card-body">
             <form method="POST">
