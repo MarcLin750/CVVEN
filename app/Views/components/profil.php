@@ -19,7 +19,7 @@ if (isset($userSession)):
             <div class="col-md-8">
                 <div class="card shadow mb-4">
                     <div class="card-body">
-                        <h1 class="mb-4">Réservations Confirmées</h1>
+                        <h1 class="mb-4">Réservations logement:</h1>
                         <?php if (empty($reservations)) : ?>
                             <div class="alert alert-info" role="alert">
                                 Aucune réservation confirmée disponible.
@@ -33,12 +33,15 @@ if (isset($userSession)):
                                                 <h5 class="mb-1">Logement : <?= $reservation['logementId'] ?></h5>
                                                 <h6 class="mb-1">Client : <?= $userSession['nom'] ?> <?= $userSession['prenom'] ?></h6>
                                             </div>
-                                            <div class="col-md-2">
+                                            <div class="col-md-3">
                                                 <?php if ($reservation['status'] === 'validate'):?>
                                                     <h5><span class="badge text-bg-success">Réservation<br>confirmer</span></h5>
                                                 <?php endif;?>
                                                 <?php if ($reservation['status'] === 'wait'):?>
                                                     <h5><span class="badge text-bg-warning">En attente<br>de confirmation</span></h5>
+                                                <?php endif;?>
+                                                <?php if ($reservation['status'] === 'newChange'):?>
+                                                    <h5><span class="badge text-bg-warning">En attente de confirmation<br>(Réservation modifier)</span></h5>
                                                 <?php endif;?>
                                                 <?php if ($reservation['status'] === 'refuse'):?>
                                                     <h5><span class="badge text-bg-danger">Réservation<br>refuser</span></h5>
@@ -48,12 +51,13 @@ if (isset($userSession)):
                                                 <p class="mb-1">Date de Début : <?= $reservation['dateDebut'] ?></p>
                                                 <p class="mb-1">Date de Fin : <?= $reservation['dateFin'] ?></p>
                                             </div>
-                                            <div class="col-md-3">
-                                                <p class="mb-1">Nombre de Personnes : <?= $reservation['nbrPersonne'] ?></p>
-                                                <p class="mb-1">Prix : <?= $reservation['prix'] ?></p>
+                                            <div class="col-md-2">
+                                                <p class="mb-1">Nbr de Personnes : <?= $reservation['nbrPersonne'] ?></p>
+                                                <p class="mb-1">Prix : <?= $reservation['prix'] . $reservation['devise']?> </p>
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="d-flex justify-content-end">
+                                                    <a href="<?= site_url('users/' . $userSession['id'] .'/'.'reservation/change/' . $reservation['id'] . '/' . $reservation['logementId']) ?>" class="btn btn-primary me-2">Modifier</a>
                                                     <a href="<?= site_url('users/' . $userSession['id'] .'/'.'cancel/' . $reservation['id'] . '/' . $reservation['logementId']) ?>" class="btn btn-danger">Annuler</a>
                                                 </div>
                                             </div>
@@ -86,7 +90,7 @@ if (isset($userSession)):
                                                     <h5 class="mb-1">Reservation ID : <?= $reservationMateriel['id'] ?></h5>
                                                     <p class="mb-1">Client : <?= $userSession['nom'] ?> <?= $userSession['prenom'] ?></p>
                                                 </div>
-                                                <div class="col-md-2">
+                                                <div class="col-md-3">
                                                     <?php if ($reservationMateriel['status'] === 'validate'):?>
                                                         <h5><span class="badge text-bg-success">Réservation<br>confirmer</span></h5>
                                                     <?php endif;?>
@@ -97,7 +101,7 @@ if (isset($userSession)):
                                                         <h5><span class="badge text-bg-danger">Réservation<br>refuser</span></h5>
                                                     <?php endif;?>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-2">
                                                     <p class="mb-1">Date de Début : <?= $reservationMateriel['dateDebut'] ?></p>
                                                     <p class="mb-1">Date de Fin : <?= $reservationMateriel['dateFin'] ?></p>
                                                 </div>

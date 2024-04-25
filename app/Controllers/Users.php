@@ -37,7 +37,7 @@ class Users extends BaseController
 
     public function profil($id): string
     {   
-        $data['reservations'] = $this->reservationModel->where('status !=', 'cancel')->where('userId', $id)->findAll();
+        $data['reservations'] = $this->reservationModel->where('status !=', 'cancel')->where('status !=', 'change')->where('userId', $id)->findAll();
 
         // récupération des données pour afficher les réservations de materiel.
         $reservationMateriels = $this->reservationMaterielModel->where('status !=', 'cancel')->where('user_id', $id)->findAll();
@@ -110,6 +110,91 @@ class Users extends BaseController
         $modifySuccess = view('components/profil_modify_success');
         
         return $this->header . $this->navbar . $modifySuccess . $this->footer;
+    }
+
+    public function reservationChange($userId, $reservationId, $logementId){
+        
+        $reservation = $this->reservationModel->getReservationById($reservationId);
+        
+        $logement = $this->logementModel->getLogementById($logementId);
+
+        if ($reservation) {
+            // Vérifier si le formulaire a été soumis
+            if ($this->request->getMethod() === 'post') {
+
+                // Ajouter des règles de validation
+                $rules = [
+                    'start_date' => 'required|valid_date',
+                    'end_date' => 'required|valid_date',
+                    'nbr_personne' => 'required|max_length[1]'
+                ];
+
+                // Vérifier si les règles de validation sont respectées
+                if (!$this->validate($rules)) {
+                    // Si les règles de validation ne sont pas respectées, afficher à nouveau la vue du formulaire avec les erreurs de validation
+                    $data['reservation'] = $reservation;
+                    $data['validation'] = $this->validator; // Passer les erreurs de validation à la vue
+                    return $this->header . $this->navbar . view('components/reservationChange', $data) . $this->footer;
+                }
+
+                // Traitement des données du formulaire de réservation
+                $formData = $this->request->getPost();
+
+                $startDate = strtotime($formData['start_date']);
+                $endDate = strtotime($formData['end_date']);
+                $diffDays = ceil(($endDate - $startDate) / (60 * 60 * 24));
+                $userSession = session()->get('user');
+                
+                if($formData['devise'] === "€"){
+                    $totalPrice = $diffDays * $logement["prix"];
+                } elseif($formData['devise'] === "$") {
+                    $newPrice = $logement["prix"] * 1.2;
+                    $totalPrice = $diffDays * $newPrice;
+                } elseif($formData['devise'] === "£") {
+                    $newPrice = $logement["prix"] * 0.85;
+                    $totalPrice = $diffDays * $newPrice;
+                }
+
+                // Données de réservation
+                $reservationData = [
+                    'dateDebut' => date('Y-m-d', $startDate),
+                    'dateFin' => date('Y-m-d', $endDate),
+                    'nbrPersonne' => $formData['nbr_personne'],
+                    'prix' => $totalPrice, 
+                    'devise' => $formData['devise'], 
+                    'userId' => $userSession['id'],
+                    'logementId' => $logement['id'],
+                    'status' => 'newChange'
+                ];
+                
+                // Insérer les données de réservation dans la base de données
+                $this->reservationModel->insert($reservationData);
+
+                // Mettre à jour la colonne reserver de la table logement à true
+                $this->reservationModel->update($reservationId, ['status' => "change"]);
+
+                // Rediriger l'utilisateur vers une page de confirmation
+                return redirect()->to('/success');
+            } else {
+                // Passer les données du logement à la vue
+                $data['reservation'] = $reservation;
+                $data['logement'] = $logement;
+
+                // Concaténer les vues du header, du contenu et du footer
+        
+                return $this->header . $this->navbar . view('components/reservationChange', $data) . $this->footer;
+            }
+        } else {
+            // Rediriger vers la page d'erreur 404
+            return $this->header . $this->navbar . view('errors/html/error_404') . $this->footer;
+        }
+    }
+
+    public function cancelReservation($userId, $reservationId, $logementId)
+    {
+        $this->reservationModel->update($reservationId, ['status' => 'cancel']);
+        $this->logementModel->update($logementId, ['reserver' => 0]);
+        return redirect()->to('users/' . $userId);
     }
 
     public function cancelReservationMateriel($userId, $reservationId, $materielId)

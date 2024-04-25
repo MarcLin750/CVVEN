@@ -39,6 +39,14 @@ if ($isLoggedIn): ?>
                                               <label class="input-group-text" for="nbr_personne">Nombre de personnes:</label>
                                               <input type="number" class="form-control" id="nbr_personne" name="nbr_personne" min="1" max="<?php echo $logement["nbrLit"]; ?>" value="<?php echo $logement["nbrLit"]; ?>" required>
                                             </div>
+                                            <div class="input-group mb-3">
+                                                <label class="input-group-text" for="nbr_personne">Devise:</label>
+                                                <select id="deviseSelect" class="form-control" name="devise">
+                                                    <option value="€" <?php if ($logement["devise"] == "€") { echo "selected"; } ?>>€ - EUR</option>
+                                                    <option value="$" <?php if ($logement["devise"] == "$") { echo "selected"; } ?>>$ - USD</option>
+                                                    <option value="£" <?php if ($logement["devise"] == "£") { echo "selected"; } ?>>£ - GBP</option>
+                                                </select>
+                                            </div>
                                             <button type="submit" class="btn btn-primary">Réserver</button>
                                         </form>
                                     </div>
@@ -78,6 +86,7 @@ if ($isLoggedIn): ?>
         var startDateInput = document.getElementById('start_date');
         var endDateInput = document.getElementById('end_date');
         var priceList = document.getElementById('price-list');
+        var deviseSelect = document.getElementById('deviseSelect');
 
         // Vérifier si les deux dates ont été sélectionnées
         if (startDateInput.value && endDateInput.value) {
@@ -92,14 +101,30 @@ if ($isLoggedIn): ?>
             priceList.innerHTML = '';
             priceList.innerHTML += '<li><strong>Nombre de jours:</strong> ' + diffDays + '</li>';
             priceList.innerHTML += '<li><strong>Nombre de nuits:</strong> ' + diffNight + '</li>';
-            priceList.innerHTML += '<li><strong>Prix par nuit:</strong> <?php echo $logement["prix"]; ?> euros</li>';
-            priceList.innerHTML += '<li><strong>Prix total:</strong> ' + (diffNight * <?php echo $logement["prix"]; ?>).toFixed(2) + ' euros</li>';
+            priceList.innerHTML += '<li><strong>Prix par nuit:</strong> ' + (<?php echo $logement["prix"]; ?> * getExchangeRate(deviseSelect.value)).toFixed(2)+ deviseSelect.value + '</li>';
+            priceList.innerHTML += '<li><strong>Prix total:</strong> ' + (diffNight * <?php echo $logement["prix"]; ?> * getExchangeRate(deviseSelect.value)).toFixed(2) + ' ' + deviseSelect.value + '</li>';
+        }
+    }
+
+    // Fonction pour obtenir le taux de change pour une devise donnée
+    function getExchangeRate(devise) {
+        // Remplacez cette fonction par votre propre code pour obtenir le taux de change à partir d'une API ou d'une base de données
+        switch (devise) {
+            case "€":
+                return 1;
+            case "$":
+                return 1.2;
+            case "£":
+                return 0.85;
         }
     }
 
     // Ajouter un écouteur d'événements pour calculer le prix total lorsqu'une date est sélectionnée
     document.getElementById('start_date').addEventListener('change', calculateTotalPrice);
     document.getElementById('end_date').addEventListener('change', calculateTotalPrice);
+
+    // Ajouter un écouteur d'événements pour calculer le prix total lorsque la devise est sélectionnée
+    document.getElementById('deviseSelect').addEventListener('change', calculateTotalPrice);
 
     // Calculer le prix total par défaut lors du chargement de la page
     calculateTotalPrice();

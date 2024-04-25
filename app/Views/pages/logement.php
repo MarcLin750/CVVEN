@@ -1,5 +1,5 @@
 <div class="container" style='padding-top: 6vh;'>
-    <h1 class="text-center" style='padding-bottom: 6vh;'>Type de logement :</h1>
+    <h1 class="text-center" style='padding-bottom: 6vh;'>Les logements :</h1>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
         <div class="col mb-4">
             <a href="/logement/type1" style="text-decoration:none; color: black;">

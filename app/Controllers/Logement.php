@@ -133,15 +133,25 @@ class Logement extends BaseController
                 $startDate = strtotime($formData['start_date']);
                 $endDate = strtotime($formData['end_date']);
                 $diffDays = ceil(($endDate - $startDate) / (60 * 60 * 24));
-                $totalPrice = $diffDays * $logement["prix"];
                 $userSession = session()->get('user');
+                
+                if($formData['devise'] === "€"){
+                    $totalPrice = $diffDays * $logement["prix"];
+                } elseif($formData['devise'] === "$") {
+                    $newPrice = $logement["prix"] * 1.2;
+                    $totalPrice = $diffDays * $newPrice;
+                } elseif($formData['devise'] === "£") {
+                    $newPrice = $logement["prix"] * 0.85;
+                    $totalPrice = $diffDays * $newPrice;
+                }
 
                 // Données de réservation
                 $reservationData = [
                     'dateDebut' => date('Y-m-d', $startDate),
                     'dateFin' => date('Y-m-d', $endDate),
                     'nbrPersonne' => $formData['nbr_personne'],
-                    'prix' => $totalPrice,
+                    'prix' => $totalPrice, 
+                    'devise' => $formData['devise'], 
                     'userId' => $userSession['id'],
                     'logementId' => $logement['id'],
                     'status' => 'wait'
@@ -150,15 +160,6 @@ class Logement extends BaseController
                 // Insérer les données de réservation dans la base de données
                 $this->reservationModel->insert($reservationData);
                 
-                // Données de liaison entre réservation et logement
-                // $reservationLogementData = [
-                //     'logementId' => $logement["id"],
-                //     'reservationId' => $logement["numLogement"]
-                // ];
-                // $this->reservationLogementModel->insert($reservationLogementData);
-
-                // var_dump($reservationData);
-
                 // Mettre à jour la colonne reserver de la table logement à true
                 $this->logementModel->update($id, ['reserver' => 1]);
 

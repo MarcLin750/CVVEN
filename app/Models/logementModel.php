@@ -11,7 +11,20 @@ class LogementModel extends Model
     protected bool $allowEmptyInserts = true;
     protected $returnType       = 'array';
     // protected $useSoftDeletes   = true;
-    protected $allowedFields    = ['numLogement', 'etage', 'aile', 'ville', 'categorie', 'details', 'nbrChambre', 'nbrLit', 'balcon', 'reserver']; // modifiée champs si besoin
+    protected $allowedFields    = [
+        'numLogement',
+        'etage',
+        'aile',
+        'ville',
+        'categorie',
+        'details',
+        'nbrChambre',
+        'nbrLit',
+        'prix',
+        'devise',
+        'balcon',
+        'reserver'
+    ]; 
     protected $useTimestamps = false;
     protected $validationRules      = [];
     protected $validationMessages   = [];

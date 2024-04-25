@@ -44,6 +44,7 @@ $routes->group('users/', ['filter' => 'authFilter'],function(RouteCollection $ro
     $routes->get('(:num)/','Users::profil/$1');
     $routes->match(['get','post'],'(:num)/modify/','Users::profilModify/$1');
     $routes->get('(:num)/modify/success/','Users::modifySuccess');
+    $routes->match(['get', 'post'], '(:num)/reservation/change/(:segment)/(:segment)/', 'Users::reservationChange/$1/$2/$3');
     $routes->get('(:num)/cancel/(:segment)/(:segment)/','Users::cancelReservation/$1/$2/$3');
     $routes->get('(:num)/materiel/cancel/(:segment)/(:segment)/','Users::cancelReservationMateriel/$1/$2/$3');
 });
@@ -58,14 +59,12 @@ $routes->group('admin/', ['filter' => 'authFilter'], function(RouteCollection $r
     $routes->post('login_validation/', 'Admin::login_validation');
 
     $routes->get('reservations/validate/(:num)/', 'Admin::validateReservation/$1');
-    $routes->get('reservations/refuse/(:num)/', 'Admin::refuseReservation/$1');
+    $routes->get('reservations/refuse/(:num)/(:segment)/', 'Admin::refuseReservation/$1/$2');
     $routes->get('reservations/goback/(:num)/(:segment)/', 'Admin::goBackReservation/$1/$2');
-    $routes->get('reservations/cancel/(:num)/(:segment)/', 'Admin::cancelReservation/$1/$2');
     $routes->get('reservations/delete/(:num)/', 'Admin::deleteReservation/$1');
 
-    $routes->get('reservations/materiel/validate/(:num)', 'Admin::validateReservationMateriel/$1');
-    $routes->get('reservations/materiel/refuse/(:num)', 'Admin::refuseReservationMateriel/$1');
+    $routes->get('reservations/materiel/validate/(:num)/', 'Admin::validateReservationMateriel/$1');
+    $routes->get('reservations/materiel/refuse/(:num)/(:segment)/', 'Admin::refuseReservationMateriel/$1/$2');
     $routes->get('reservations/materiel/goback/(:num)/(:segment)/', 'Admin::goBackReservationMateriel/$1/$2');
-    $routes->get('reservations/materiel/cancel/(:num)/(:segment)/', 'Admin::cancelReservationMateriel/$1/$2');
     $routes->get('reservations/materiel/delete/(:num)/', 'Admin::deleteReservationMateriel/$1');
 });
